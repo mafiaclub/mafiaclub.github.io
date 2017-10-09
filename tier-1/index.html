@@ -89,7 +89,7 @@ $.getJSON("/tier-1/roles.json")
     // dividing by 2 is somewhat dependent on the json content; it would
     // look really ugly if there was more stuff in the second column than the
     // first
-    var split = townRoles.length / 2;
+    var split = (townRoles.length + 1) / 2;
     $.each(townRoles, function(ix, e) {
       if (ix < split) {
         townRoles1.push(e);
