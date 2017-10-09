@@ -19,14 +19,21 @@
     </p>
 
     <div class="container" id="role-list">
-      <div id="town-role-list">
-        <ul class="list"></ul>
+      <div class="row">
+        <div class="col-sm-6" id="town-role-list-1">
+          <ul class="list"></ul>
+        </div>
+        <div class="col-sm-6" id="town-role-list-2">
+          <ul class="list"></ul>
+        </div>
       </div>
-      <div id="mafia-role-list">
-        <ul class="list"></ul>
-      </div>
-      <div id="third-party-role-list">
-        <ul class="list"></ul>
+      <div class="row">
+        <div class="col-sm-6" id="mafia-role-list">
+          <ul class="list"></ul>
+        </div>
+        <div class="col-sm-6" id="third-party-role-list">
+          <ul class="list"></ul>
+        </div>
       </div>
     </div>
 
@@ -51,40 +58,59 @@
     <script type="text/javascript">
 // initialize lists of roles from json
 $.getJSON("/tier-1/roles.json")
- .done(function(data) {
-  var townRoles = [];
-  var mafiaRoles = [];
-  var thirdPartyRoles = [];
-  $.each(data, function(ix, e) {
-    console.log(ix, e);
-    switch (e.team) {
-    case "Town":
-        townRoles.push(e);
-        break;
-    case "Mafia":
-        mafiaRoles.push(e);
-        break;
-    case "Third Party":
-        thirdPartyRoles.push(e);
-        break;
-    default:
-        throw "Invalid team!";
-    }
-  });
+  .done(function(data) {
+    var townRoles = [];
+    var mafiaRoles = [];
+    var thirdPartyRoles = [];
+    $.each(data, function(ix, e) {
+      console.log(ix, e);
+      switch (e.team) {
+        case "Town":
+          townRoles.push(e);
+          break;
+        case "Mafia":
+          mafiaRoles.push(e);
+          break;
+        case "Third Party":
+          thirdPartyRoles.push(e);
+          break;
+        default:
+          throw "Invalid team!";
+      }
+    });
 
-  var townRoleList = new List('town-role-list', {
-    item: 'single-col-item',
-    valueNames: ['name', 'description']
-  }, townRoles);
-  var mafiaRoleList = new List('mafia-role-list', {
-    item: 'single-col-item',
-    valueNames: ['name', 'description']
-  }, mafiaRoles);
-  var thirdPartyRoleList = new List('third-party-role-list', {
-    item: 'single-col-item',
-    valueNames: ['name', 'description']
-  }, thirdPartyRoles);
-});
+    // divide town roles into two parts to have more even ui
+    var townRoles1 = [];
+    var townRoles2 = [];
+    // dividing by 2 is somewhat dependent on the json content; it would
+    // look really ugly if there was more stuff in the second column than the
+    // first
+    var split = townRoles.length / 2;
+    $.each(townRoles, function(ix, e) {
+      if (ix < split) {
+        townRoles1.push(e);
+      } else {
+        townRoles2.push(e);
+      }
+    });
+
+    var townRoleList1 = new List('town-role-list-1', {
+      item: 'single-col-item',
+      valueNames: ['name', 'description']
+    }, townRoles1);
+    var townRoleList2 = new List('town-role-list-2', {
+      item: 'single-col-item',
+      valueNames: ['name', 'description']
+    }, townRoles2);
+    var mafiaRoleList = new List('mafia-role-list', {
+      item: 'single-col-item',
+      valueNames: ['name', 'description']
+    }, mafiaRoles);
+    var thirdPartyRoleList = new List('third-party-role-list', {
+      item: 'single-col-item',
+      valueNames: ['name', 'description']
+    }, thirdPartyRoles);
+  });
     </script>
   </body>
 </html>
