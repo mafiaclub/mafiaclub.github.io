@@ -52,11 +52,13 @@
 
     <script type="text/javascript">
 // initialize lists of roles from json
-jQuery.getJSON("/tier-1/roles.json", function(data) {
+$.getJSON("/tier-1/roles.json", function(data) {
+  console.log(data);
   var townRoles = [];
   var mafiaRoles = [];
   var thirdPartyRoles = [];
   $.each(data, function(ix, e) {
+    console.log(ix, e);
     switch (e.team) {
     case "Town":
         townRoles.push(e);
