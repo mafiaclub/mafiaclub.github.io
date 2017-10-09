@@ -101,7 +101,7 @@
         the closed format of gameplay. <a href="/tier-1/">Click here</a> for
         additional details.
         </p>
-        <div class="tier-1-list container">
+        <div id="tier-1-list" class="container">
         </div>
       </div>
       <div class="tab-pane fade" id="tier-3">
@@ -109,7 +109,7 @@
         This format is designed to promote competitive gameplay.
         <a href="/tier-3/">Click here</a> for additional details.
         </p>
-        <div class="tier-3-list container">
+        <div id="tier-3-list" class="container">
         </div>
       </div>
       <div class="tab-pane fade" id="tier-4">
@@ -118,9 +118,10 @@
         still keeping its original spirit. <a href="/tier-4/">Click here</a>
         for additional details.
         </p>
-        <div class="tier-4-list container">
+        <div id="tier-4-list" class="container">
         </div>
       </div>
+    </div>
 
     <!-- I exclude super closed because this is not a crown jewel that new
       players should be introduced to.
@@ -133,12 +134,35 @@
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
     <script type="text/javascript">
+var popover = function(name, description, team) {
+  return '<button type="button" class="btn btn-default" href="#" data-content="'
+    + description
+    + '" rel="popover" data-placement="top" data-original-title="'
+    + name + ' - ' + team
+    + '" data-toggle="popover" data-trigger="hover">'
+    + name
+    + '<\/button>';
+};
+
+function makeList(tier) {
+  $.getJSON('/tier-' + tier + '/roles.json')
+    .done(function(data) {
+      $.each(data, function(ix, e) {
+        $('#tier-' + tier + '-list')
+          .append(popover(e.name, e.description, e.team));
+      });
+      $('[data-toggle="popover"]').popover();
+    });
+}
+
+makeList(1);
+makeList(3);
     </script>
   </body>
 </html>
