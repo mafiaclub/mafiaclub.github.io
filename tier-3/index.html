@@ -67,7 +67,6 @@ $.getJSON("/tier-3/roles.json")
     var mafiaRoles = [];
     var thirdPartyRoles = [];
     $.each(data, function(ix, e) {
-      console.log(ix, e);
       switch (e.team) {
         case "Town":
           townRoles.push(e);
