@@ -1,0 +1,184 @@
+[
+    {
+        "name": "Townie",
+        "description": "Normal Town.",
+        "team": "Town"
+    },
+    {
+        "name": "1-Shot Bulletproof Townie",
+        "description": "Protected from one kill during the night.",
+        "team": "Town"
+    },
+    {
+        "name": "1-Shot Vigilante",
+        "description": "Once per game can kill a player during the night.",
+        "team": "Town"
+    },
+    {
+        "name": "2-Shot Vigilante",
+        "description": "Twice per game can kill a player during the night.",
+        "team": "Town"
+    },
+    {
+        "name": "Bodyguard",
+        "description": "Visit one player each night. Any visit on that player will visit you stead. 1 shot bulletproof.",
+        "team": "Town"
+    },
+    {
+        "name": "Deputy",
+        "description": "Take over as Sheriff the night after the Sheriff dies.",
+        "team": "Town"
+    },
+    {
+        "name": "Doctor",
+        "description": "Save a person each night. Can't save the same person two nights in a row.",
+        "team": "Town"
+    },
+    {
+        "name": "Fireproof Townie",
+        "description": "Immune to being burned.",
+        "team": "Town"
+    },
+    {
+        "name": "Jailer",
+        "description": "Jails one player per night, roleblocking and protecting them for the night. Cannot jail themself.",
+        "team": "Town"
+    },
+    {
+        "name": "Mason",
+        "description": "Wake up the first night to find out who all of the other masons are.",
+        "team": "Town"
+    },
+    {
+        "name": "Milkman",
+        "description": "Give milk to a player each night. The milk does nothing.",
+        "team": "Town"
+    },
+    {
+        "name": "Mayor",
+        "description": "Break tie votes in favor of this player's vote",
+        "team": "Town"
+    },
+    {
+        "name": "Miller",
+        "description": "Appears guilty when investigated by the Sheriff (or Deputy)",
+        "team": "Town"
+    },
+    {
+        "name": "Old Man with Shotgun",
+        "description": "Once per game, any time during the day before voting, can stand up and kill a player.",
+        "team": "Town"
+    },
+    {
+        "name": "Oracle",
+        "description": "Visits one player per night. When the Oracle dies, the most recently visited player's role is revealed.",
+        "team": "Town"
+    },
+    {
+        "name": "Sheriff",
+        "description": "Check one person each night. Thumbs up means that player is guilty (e.g. a member of the Mafia) and thumbs down means that player is innocent.",
+        "team": "Town"
+    },
+    {
+        "name": "Sleepwalker",
+        "description": "Randomly visits a player each night, without knowing who that player is",
+        "team": "Town"
+    },
+    {
+        "name": "Tracker",
+        "description": "Tracks one player each night, seeing who they visit.",
+        "team": "Town"
+    },
+    {
+        "name": "Virgin",
+        "description": "Once per game during the night, \"perform the ritual\", preventing all kills that night.",
+        "team": "Town"
+    },
+    {
+        "name": "Watcher",
+        "description": "Watches one player, seeing everyone who visits them.",
+        "team": "Town"
+    },
+
+    {
+        "name": "Mafia",
+        "description": "Normal Mafia.",
+        "team": "Mafia"
+    },
+    {
+        "name": "1-Shot Bulletproof Mafia",
+        "description": "Protected from one kill during the night.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Bootlegger",
+        "description": "Target one player per night, blocking their night action.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Consigliere",
+        "description": "Check one person per night, seeing if they are a plain Townie (thumbs down) or a power role (thumbs up).",
+        "team": "Mafia"
+    },
+    {
+        "name": "Fireproof Mafia",
+        "description": "Immune to being burned.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Godfather",
+        "description": "Appears innocent when checked by the Sheriff.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Gravedigger",
+        "description": "When performing the kill, the role of the player killed is not revealed except to the Gravedigger.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Hitman",
+        "description": "Unnoticeable by trackers and watchers.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Hooker",
+        "description": "Silence one player each night.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Illusionist",
+        "description": "Visit two players. Any visit on one of those players instead visits the other player this night.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Strongman",
+        "description": "Once per game, if you perform the kill, make your kill unblockable by using your strength.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Traitor",
+        "description": "Does not wake with the other members of the Mafia at night. The other Mafia members know there is a Traitor in the game, but not who that player is.",
+        "team": "Mafia"
+    },
+
+    {
+        "name": "Amnesiac",
+        "description": "Must take on the role of a dead player and fufill that players win condition in order to win.",
+        "team": "Third Party"
+    },
+    {
+        "name": "Arsonist",
+        "description": "Every night either choose a player to douse with gasoline or ignite all doused players. One shot bulletproof.",
+        "team": "Third Party"
+    },
+    {
+        "name": "Serial Killer",
+        "description": "Kill one person each night. The first night choose either: bulletproof (thumbs up) or innocent to Sheriff checks and one shot bullet proof (thumbs down).",
+        "team": "Third Party"
+    },
+    {
+        "name": "Admirer",
+        "description": "Takes over for the Serial Killer the night after the Serial Killer dies. Wins with the Serial Killer. The Admirer is shown who the Serial Killer is, but the Serial Killer does not know who the Serial Killer is.",
+        "team": "Third Party"
+    }
+]
