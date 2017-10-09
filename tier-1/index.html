@@ -52,8 +52,8 @@
 
     <script type="text/javascript">
 // initialize lists of roles from json
-$.getJSON("/tier-1/roles.json", function(data) {
-  console.log(data);
+$.getJSON("/tier-1/roles.json")
+ .done(function(data) {
   var townRoles = [];
   var mafiaRoles = [];
   var thirdPartyRoles = [];
@@ -74,9 +74,18 @@ $.getJSON("/tier-1/roles.json", function(data) {
     }
   });
 
-  var townRoleList = new List('town-role-list', {item: 'multi-col-item'}, townRoles);
-  var mafiaRoleList = new List('mafia-role-list', {item: 'single-col-item'}, mafiaRoles);
-  var thirdPartyRoleList = new List('third-party-role-list', {item: 'single-col-item'}, thirdPartyRoles);
+  var townRoleList = new List('town-role-list', {
+    item: 'multi-col-item',
+    valueNames: ['name', 'description']
+  }, townRoles);
+  var mafiaRoleList = new List('mafia-role-list', {
+    item: 'single-col-item',
+    valueNames: ['name', 'description']
+  }, mafiaRoles);
+  var thirdPartyRoleList = new List('third-party-role-list', {
+    item: 'single-col-item',
+    valueNames: ['name', 'description']
+  }, thirdPartyRoles);
 });
     </script>
   </body>
