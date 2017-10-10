@@ -41,7 +41,7 @@
     },
     {
         "name": "Investigator",
-        "description": "Visit a player, if they performed a kill, prevent it.",
+        "description": "Each night visit a player, if they perform a kill this night, prevent it.",
         "team": "Town"
     },
     {
