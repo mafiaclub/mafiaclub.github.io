@@ -55,11 +55,6 @@
         "team": "Town"
     },
     {
-        "name": "Milkman",
-        "description": "Give milk to a player each night. The milk does nothing.",
-        "team": "Town"
-    },
-    {
         "name": "Mayor",
         "description": "Break tie votes in favor of this player's vote",
         "team": "Town"
