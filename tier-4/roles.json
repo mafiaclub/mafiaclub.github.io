@@ -95,11 +95,6 @@
         "team": "Town"
     },
     {
-        "name": "Joker",
-        "description": "Knows one role that is in this game (other than their own role).",
-        "team": "Town"
-    },
-    {
         "name": "Virgin",
         "description": "Once per game during the night, \"perform the ritual\", preventing all kills that night.",
         "team": "Town"
