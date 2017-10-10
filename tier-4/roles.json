@@ -80,6 +80,11 @@
         "team": "Town"
     },
     {
+        "name": "Seer",
+        "description": "Know one role that is in the game (aside from your own).",
+        "team": "Town"
+    },
+    {
         "name": "Sheriff",
         "description": "Check one person each night. Thumbs up means that player is guilty (e.g. a member of the Mafia) and thumbs down means that player is innocent.",
         "team": "Town"
