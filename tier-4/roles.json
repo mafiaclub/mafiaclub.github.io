@@ -21,7 +21,7 @@
     },
     {
         "name": "Bodyguard",
-        "description": "Visit one player each night. Any visit on that player will visit you stead. 1 shot bulletproof.",
+        "description": "Visit one player each night. Any visit on that player will visits you instead. 1 shot bulletproof.",
         "team": "Town"
     },
     {
