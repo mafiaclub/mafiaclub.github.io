@@ -186,8 +186,8 @@
         "team": "Mafia"
     },
     {
-        "name": "Traitor v2",
-        "description": "Does not wake with the other members of the Mafia at night. The Mafia knows who the Traitor is but the Traitor does not know who the Mafia is.",
+        "name": "Traitor",
+        "description": "Does not wake with the other members of the Mafia at night. The other Mafia members know there is a Traitor in the game, but not who that player is.",
         "team": "Mafia"
     },
 
