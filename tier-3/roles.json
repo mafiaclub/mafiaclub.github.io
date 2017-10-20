@@ -40,7 +40,7 @@
         "team": "Town"
     },
     {
-        "name": "Jailer",
+        "name": "Jailor",
         "description": "Jails one player per night, roleblocking and protecting them for the night. Cannot jail themself.",
         "team": "Town"
     },
