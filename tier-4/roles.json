@@ -45,7 +45,7 @@
         "team": "Town"
     },
     {
-        "name": "Jailer",
+        "name": "Jailor",
         "description": "Jails one player per night, roleblocking and protecting them for the night. Cannot jail themself.",
         "team": "Town"
     },
@@ -116,7 +116,7 @@
     },
     {
         "name": "Witch",
-        "description": "Once per game visit a player, if they would have died protect them, otherwise kill them.",
+        "description": "Each night you may visit a player, if that player was shot save them, otherwise kill them.",
         "team": "Town"
     },
 
