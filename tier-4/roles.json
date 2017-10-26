@@ -21,7 +21,7 @@
     },
     {
         "name": "Bard",
-        "description": "Each night visit a player, if they perform a kill this night, prevent it.",
+        "description": "Each night visit a player preventing any kills they perform that night.",
         "team": "Town"
     },
     {
