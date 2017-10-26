@@ -208,7 +208,7 @@
     },
     {
         "name": "Admirer",
-        "description": "Takes over for the Serial Killer the night after the Serial Killer dies. Wins with the Serial Killer. The Admirer is shown who the Serial Killer is, but the Serial Killer does not know who the Serial Killer is.",
+        "description": "Takes over for the Serial Killer the night after the Serial Killer dies. Wins with the Serial Killer. The Admirer is shown who the Serial Killer is, but the Serial Killer does not know who the Admirer is.",
         "team": "Third Party"
     }
 ]
