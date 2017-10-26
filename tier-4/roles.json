@@ -40,7 +40,7 @@
         "team": "Town"
     },
     {
-        "name": "Investigator",
+        "name": "Bard",
         "description": "Each night visit a player, if they perform a kill this night, prevent it.",
         "team": "Town"
     },
