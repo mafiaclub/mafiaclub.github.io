@@ -20,6 +20,11 @@
         "team": "Town"
     },
     {
+        "name": "Bard",
+        "description": "Each night visit a player, if they perform a kill this night, prevent it.",
+        "team": "Town"
+    },
+    {
         "name": "Bodyguard",
         "description": "Visit one player each night. Any visit on that player will visits you instead. 1 shot bulletproof.",
         "team": "Town"
@@ -37,11 +42,6 @@
     {
         "name": "Fireproof Townie",
         "description": "Immune to being burned.",
-        "team": "Town"
-    },
-    {
-        "name": "Bard",
-        "description": "Each night visit a player, if they perform a kill this night, prevent it.",
         "team": "Town"
     },
     {
