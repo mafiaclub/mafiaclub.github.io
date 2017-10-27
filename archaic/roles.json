@@ -8,5 +8,10 @@
         "name": "Shrink",
         "description": "Each night visit a player, if that player is third party convert them to town (and they loose whatever abilities they have).",
         "team": "Town"
+    },
+    {
+        "name": "Paranoid Townie",
+        "description": "If a player visits you during the night, kill them.",
+        "team": "Town"
     }
 ]
