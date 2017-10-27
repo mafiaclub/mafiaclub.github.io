@@ -3,5 +3,10 @@
         "name": "Bartender",
         "description": "Each night visit a player, roleblocking them.",
         "team": "Town"
+    },
+    {
+        "name": "Shrink",
+        "description": "Each night visit a player, if that player is third party convert them to town (and they loose whatever abilities they have).",
+        "team": "Town"
     }
 ]
