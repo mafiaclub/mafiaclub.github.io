@@ -89,7 +89,7 @@
     players die. You can look at the various role sets we use below.
     </p>
 
-    <ul class="nav nav-tabs">
+    <ul id="tier-tabs" class="nav nav-tabs">
       <li class="active"><a href="#tier-1" data-toggle="tab" aria-expanded="true">Tier 1</a></li>
       <li class=""><a href="#tier-3" data-toggle="tab" aria-expanded="false">Tier 3</a></li>
       <li class=""><a href="#tier-4" data-toggle="tab" aria-expanded="false">Tier 4</a></li>
@@ -146,7 +146,17 @@ var popover = function(name, description, team) {
     + '<\/button>';
 };
 
+var tab = function(id, name, active) {
+  return '<li class="' + active ? 'active' : '' + '">'
+    + '<a href="#' + id + '" data-toggle="tab" '
+    + 'aria-expanded="'
+    + active ? 'true' : 'false' + '">'
+    + name
+    + '<\/a><\/li>';
+};
+
 function makeList(tier) {
+  $('
   $.getJSON('/tier-' + tier + '/roles.json')
     .done(function(data) {
       $.each(data, function(ix, e) {
@@ -157,9 +167,11 @@ function makeList(tier) {
     });
 }
 
-makeList(1);
-makeList(3);
-makeList(4);
+$.getJSON('/tier-manifest.json', function(data) {
+  $.each(data, function(ix, e) {
+    makeList(e);
+  });
+});
     </script>
   </body>
 </html>
