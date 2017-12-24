@@ -28,7 +28,6 @@ var tierList = function(tier, active) {
 var makeList = function(tier, tiers, roles, active) {
   var tier = tiers.find(x => tier === x.version);
   var roles = roles.filter(x => tier.roles.includes(x.name));
-  var id = 'tier' + tier.version;
   $('#tier-tabs').append(tab(tier, active));
   $('#tiers').append(tierList(tier, active));
   $.each(roles, function(ix, e) {
