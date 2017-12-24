@@ -2,6 +2,7 @@
     {
         "version": "1",
         "name": "Tier 1",
+        "description": "This format is the simplest and is designed to introduce new players to the closed format of gameplay.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
@@ -25,6 +26,7 @@
     {
         "version": "2",
         "name": "Tier 2",
+        "description": "This tier is designed for competitive gameplay.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
@@ -68,6 +70,7 @@
     {
         "version": "3",
         "name": "Tier 3",
+        "description": "This tier is designed with fun in mind and includes more complex roles.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
@@ -111,6 +114,7 @@
     {
         "version": "4",
         "name": "Tier 4",
+        "description": "This tier is intended to include almost any reasonable role.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
@@ -158,8 +162,59 @@
     },
 
     {
-        "version": "4.1",
+        "version": "4-1",
         "name": "Tier 4.1",
+        "description": "This tier was introduced in Fall 2017 and introduces several new more commplex roles. It is the original Tier 4.",
+        "roles": [
+            "Townie",
+            "1-Shot Bulletproof Townie",
+            "1-Shot Vigilante",
+            "2-Shot Vigilante",
+            "Bard",
+            "Bodyguard",
+            "Deputy",
+            "Doctor",
+            "Fireproof Townie",
+            "Jailor",
+            "Mason",
+            "Milkman",
+            "Mayor",
+            "Miller",
+            "Old Man with Shotgun",
+            "Oracle",
+            "Priest",
+            "Prophet",
+            "Sheriff",
+            "Sleepwalker",
+            "Tracker",
+            "Virgin",
+            "Watcher",
+            "Witch",
+            "Mafia",
+            "1-Shot Bulletproof Mafia",
+            "Bootlegger",
+            "Consigliere v2",
+            "Fireproof Mafia",
+            "Godfather",
+            "Gravedigger",
+            "Hitman",
+            "Hooker",
+            "Illusionist",
+            "Madman",
+            "Spy",
+            "Strongman",
+            "Traitor",
+            "Amnesiac",
+            "Arsonist",
+            "Serial Killer",
+            "Admirer"
+        ]
+    },
+
+    {
+        "version": "4-2",
+        "name": "Tier 4.2",
+        "description": "This tier was introduced near the end of 2017 and introduces a few new roles that will later be folded into Tier 4.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",

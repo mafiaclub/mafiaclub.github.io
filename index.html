@@ -89,38 +89,10 @@
     players die. You can look at the various role sets we use below.
     </p>
 
+    <!-- Initialized by index.js from json data -->
     <ul id="tier-tabs" class="nav nav-tabs">
-      <li class="active"><a href="#tier-1" data-toggle="tab" aria-expanded="true">Tier 1</a></li>
-      <li class=""><a href="#tier-3" data-toggle="tab" aria-expanded="false">Tier 3</a></li>
-      <li class=""><a href="#tier-4" data-toggle="tab" aria-expanded="false">Tier 4</a></li>
     </ul>
     <div id="tiers" class="tab-content">
-      <div class="tab-pane fade active in" id="tier-1">
-        <p>
-        This format is the simplest and designed to introduce new players to
-        the closed format of gameplay. <a href="/tier-1/">Click here</a> for
-        additional details.
-        </p>
-        <div id="tier-1-list" class="container">
-        </div>
-      </div>
-      <div class="tab-pane fade" id="tier-3">
-        <p>
-        This format is designed to promote competitive gameplay.
-        <a href="/tier-3/">Click here</a> for additional details.
-        </p>
-        <div id="tier-3-list" class="container">
-        </div>
-      </div>
-      <div class="tab-pane fade" id="tier-4">
-        <p>
-        A managably crazy format designed to be distinct from Tier 3 while
-        still keeping its original spirit. <a href="/tier-4/">Click here</a>
-        for additional details.
-        </p>
-        <div id="tier-4-list" class="container">
-        </div>
-      </div>
     </div>
 
     <h3>Super Closed</h3>
@@ -134,44 +106,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-
-    <script type="text/javascript">
-var popover = function(name, description, team) {
-  return '<button type="button" class="btn btn-default" href="#" data-content="'
-    + description
-    + '" rel="popover" data-placement="top" data-original-title="'
-    + name + ' - ' + team
-    + '" data-toggle="popover" data-trigger="hover">'
-    + name
-    + '<\/button>';
-};
-
-var tab = function(id, name, active) {
-  return '<li class="' + active ? 'active' : '' + '">'
-    + '<a href="#' + id + '" data-toggle="tab" '
-    + 'aria-expanded="'
-    + active ? 'true' : 'false' + '">'
-    + name
-    + '<\/a><\/li>';
-};
-
-function makeList(tier) {
-  $('
-  $.getJSON('/tier-' + tier + '/roles.json')
-    .done(function(data) {
-      $.each(data, function(ix, e) {
-        $('#tier-' + tier + '-list')
-          .append(popover(e.name, e.description, e.team));
-      });
-      $('[data-toggle="popover"]').popover();
-    });
-}
-
-$.getJSON('/tier-manifest.json', function(data) {
-  $.each(data, function(ix, e) {
-    makeList(e);
-  });
-});
-    </script>
+    <script type="text/javascript" src="/index.js"></script>
   </body>
 </html>
