@@ -22,7 +22,9 @@ var tierList = function(tier, active) {
     + '" id="tier-' + tier.version + '">'
     + '<p>' + tier.description + '<\/p>'
     + '<div id="tier-' + tier.version + '-list" class="container">'
-    + '<\/div><\/div>';
+    + '<\/div>'
+    + '<p>For more details see <a href="/detail?' + tier.version + '">here</a>.</p>'
+    + '<\/div>';
 }
 
 var makeList = function(tier, tiers, roles, active) {
