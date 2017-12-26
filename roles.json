@@ -22,12 +22,14 @@
     {
         "name": "Bard",
         "description": "Each night visit a player preventing any kills they perform that night.",
-        "team": "Town"
+        "team": "Town",
+        "author": "Devin Lehmacher"
     },
     {
         "name": "Bodyguard",
         "description": "Visit one player each night. Any visit on that player will visits you instead. 1 shot bulletproof.",
-        "team": "Town"
+        "team": "Town",
+        "author": "Chris Colen"
     },
     {
         "name": "Busdriver",
@@ -87,17 +89,20 @@
     {
         "name": "Priest",
         "description": "Twice per game, protect a person. You can use multiple saves in the same night.",
-        "team": "Town"
+        "team": "Town",
+        "author": "Devin Lehmacher"
     },
     {
         "name": "Prophet",
         "description": "Know one role that is in the game (aside from your own).",
-        "team": "Town"
+        "team": "Town",
+        "author": "Devin Lehmacher"
     },
     {
         "name": "Seer",
         "description": "Every night learn if there was a guilty player on the block the previous day.",
-        "team": "Town"
+        "team": "Town",
+        "author": "Nancy Sun"
     },
     {
         "name": "Sheriff",
@@ -117,7 +122,8 @@
     {
         "name": "Virgin",
         "description": "Once per game during the night, \"perform the ritual\", preventing all kills that night.",
-        "team": "Town"
+        "team": "Town",
+        "author": "Chris Colen"
     },
     {
         "name": "Watcher",
@@ -127,7 +133,8 @@
     {
         "name": "Witch",
         "description": "Each night you may visit a player, if that player was shot save them, otherwise kill them.",
-        "team": "Town"
+        "team": "Town",
+        "author": "Devin Lehmacher"
     },
 
     {
@@ -163,7 +170,8 @@
     {
         "name": "Framer",
         "description": "Every night visit a player. If the player you visit is on the block at the end of the day, that player dies instead of who the town votes for.",
-        "team": "Mafia"
+        "team": "Mafia",
+        "author": "Nancy Sun"
     },
     {
         "name": "Godfather",
@@ -193,17 +201,20 @@
     {
         "name": "Lynchpin",
         "description": "Unlynchable until all of the other Mafia members are dead. Every time you are lynched other than the first night they choose a player to roleblock immediately.",
-        "team": "Mafia"
+        "team": "Mafia",
+        "author": "Nancy Sun"
     },
     {
         "name": "Madman",
         "description": "If this player doesn't perform the kill for the Mafia, perform an additional kill.",
-        "team": "Mafia"
+        "team": "Mafia",
+        "author": "Devin Lehmacher"
     },
     {
         "name": "Spy",
         "description": "At the start of the game, you are told a role that is not in this game.",
-        "team": "Mafia"
+        "team": "Mafia",
+        "author": "Devin Lehmacher"
     },
     {
         "name": "Strongman",
