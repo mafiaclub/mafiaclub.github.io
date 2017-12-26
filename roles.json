@@ -26,6 +26,11 @@
         "author": "Devin Lehmacher"
     },
     {
+        "name": "Bartender",
+        "description": "Each night visit a player, roleblocking them.",
+        "team": "Town"
+    },
+    {
         "name": "Bodyguard",
         "description": "Visit one player each night. Any visit on that player will visits you instead. 1 shot bulletproof.",
         "team": "Town",
@@ -87,6 +92,11 @@
         "team": "Town"
     },
     {
+        "name": "Paranoid Townie",
+        "description": "If a player visits you during the night, kill them.",
+        "team": "Town"
+    },
+    {
         "name": "Priest",
         "description": "Twice per game, protect a person. You can use multiple saves in the same night.",
         "team": "Town",
@@ -107,6 +117,11 @@
     {
         "name": "Sheriff",
         "description": "Check one person each night. Thumbs up means that player is guilty (e.g. a member of the Mafia) and thumbs down means that player is innocent.",
+        "team": "Town"
+    },
+    {
+        "name": "Shrink",
+        "description": "Each night visit a player, if that player is third party convert them to town (and they loose whatever abilities they have).",
         "team": "Town"
     },
     {
