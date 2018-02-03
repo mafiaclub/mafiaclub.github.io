@@ -1,13 +1,12 @@
 [
     {
         "version": "1",
-        "name": "Tier 1",
+        "name": "Basic",
         "description": "This format is the simplest and is designed to introduce new players to the closed format of gameplay.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
             "1-Shot Vigilante",
-            "Busdriver",
             "Deputy",
             "Doctor",
             "Mason",
@@ -69,7 +68,7 @@
 
     {
         "version": "3",
-        "name": "Tier 3",
+        "name": "Advanced",
         "description": "This tier is designed with fun in mind and includes more complex roles.",
         "roles": [
             "Townie",
@@ -113,7 +112,7 @@
 
     {
         "version": "4",
-        "name": "Tier 4",
+        "name": "Experimental",
         "description": "This tier is intended to include almost any reasonable role.",
         "roles": [
             "Townie",
@@ -134,6 +133,7 @@
             "Oracle",
             "Priest",
             "Prophet",
+            "Seer",
             "Sheriff",
             "Sleepwalker",
             "Tracker",
@@ -145,11 +145,13 @@
             "Bootlegger",
             "Consigliere v2",
             "Fireproof Mafia",
+            "Framer",
             "Godfather",
             "Gravedigger",
             "Hitman",
             "Hooker",
             "Illusionist",
+            "Lynchpin",
             "Madman",
             "Spy",
             "Strongman",
