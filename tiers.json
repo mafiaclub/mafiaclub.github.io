@@ -2,7 +2,7 @@
     {
         "version": "1",
         "name": "Basic",
-        "description": "This format is the simplest and is designed to introduce new players to the closed format of gameplay.",
+        "description": "This set of roles is the simplest and is designed to introduce new players to the closed format of gameplay.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
@@ -24,8 +24,8 @@
 
     {
         "version": "2",
-        "name": "Tier 2",
-        "description": "This tier is designed for competitive gameplay.",
+        "name": "Normal",
+        "description": "This set of roles is designed for competitive gameplay.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
@@ -69,7 +69,7 @@
     {
         "version": "3",
         "name": "Advanced",
-        "description": "This tier is designed with fun in mind and includes more complex roles.",
+        "description": "This set of roles is designed with fun in mind and includes more complex roles.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
@@ -113,7 +113,7 @@
     {
         "version": "4",
         "name": "Experimental",
-        "description": "This tier is intended to include almost any reasonable role.",
+        "description": "This set of roles is intended to include almost any reasonable role.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
@@ -165,8 +165,8 @@
 
     {
         "version": "4-1",
-        "name": "Tier 4.1",
-        "description": "This tier was introduced in Fall 2017 and introduces several new more commplex roles. It is the original Tier 4.",
+        "name": "Experimental v1",
+        "description": "This set of roles was introduced in Fall 2017 and introduces several new more commplex roles.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
@@ -215,8 +215,8 @@
 
     {
         "version": "4-2",
-        "name": "Tier 4.2",
-        "description": "This tier was introduced near the end of 2017 and introduces a few new roles that will later be folded into Tier 4.",
+        "name": "Experimental v2",
+        "description": "This revision of Experimental was introduced by Nancy near the end of Fall 2017.",
         "roles": [
             "Townie",
             "1-Shot Bulletproof Townie",
