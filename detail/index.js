@@ -1,4 +1,4 @@
-var prefix = '/raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
+var prefix = 'https://raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
 
 var tierID = window.location.search.substring(1);
 tierID = tierID.replace(/\./, '-');

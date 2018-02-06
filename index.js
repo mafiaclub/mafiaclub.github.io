@@ -1,4 +1,4 @@
-var prefix = '/raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
+var prefix = 'https://raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
 
 var popover = function(name, description, team) {
   return '<button type="button" class="btn btn-default" href="#" data-content="'
