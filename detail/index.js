@@ -1,9 +1,11 @@
+var prefix = '/raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
+
 var tierID = window.location.search.substring(1);
 tierID = tierID.replace(/\./, '-');
 // it would be good to validate the tier string a little bit more
 
-$.getJSON('/tiers.json', function(tiers) {
-  $.getJSON('/roles.json', function(allRoles) {
+$.getJSON(prefix + '/tiers.json', function(tiers) {
+  $.getJSON(prefix + '/roles.json', function(allRoles) {
     var tier = tiers.find(x => tierID === x.version);
     console.log(tier);
     $('#tier-name').text(tier.name);

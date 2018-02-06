@@ -1,3 +1,5 @@
+var prefix = '/raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
+
 var popover = function(name, description, team) {
   return '<button type="button" class="btn btn-default" href="#" data-content="'
     + description
@@ -38,9 +40,9 @@ var makeList = function(tier, tiers, roles, active) {
   });
 };
 
-$.getJSON('/tier-manifest.json', function(data) {
-  $.getJSON('/tiers.json', function(tiers) {
-    $.getJSON('/roles.json', function(roles) {
+$.getJSON(prefix + '/tier-manifest.json', function(data) {
+  $.getJSON(prefix + '/tiers.json', function(tiers) {
+    $.getJSON(prefix + '/roles.json', function(roles) {
       // generate all of the tier lists
       $.each(data, function(ix, e) {
         var active = ix === 0;
