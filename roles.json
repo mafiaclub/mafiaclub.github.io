@@ -110,7 +110,7 @@
     },
     {
         "name": "Seer",
-        "description": "Every night learn if there was a guilty player on the block the previous day.",
+        "description": "Every night learn if there was a guilty player on the block the previous day. Unblockable.",
         "team": "Town",
         "author": "Nancy Sun"
     },
@@ -184,7 +184,7 @@
     },
     {
         "name": "Framer",
-        "description": "Every night visit a player. If the player you visit is on the block at the end of the day, that player dies instead of who the town votes for.",
+        "description": "Every night visit a player. That player is notified that they were framed. If the player you visit is on the block at the end of the day, that player dies instead of who the town votes for.",
         "team": "Mafia",
         "author": "Nancy Sun"
     },
