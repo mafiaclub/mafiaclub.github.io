@@ -47,6 +47,13 @@
         "team": "Town"
     },
     {
+        "name": "Detective",
+        "description": "Visit a person. If they die find out what role their killer was.",
+        "team": "Town",
+        "author": "Chris Colen",
+        "comment": "Created as a fake claim during a game. Initial name was necromancer."
+    },
+    {
         "name": "Doctor",
         "description": "Save a person each night. Can't save the same person two nights in a row.",
         "team": "Town"
@@ -109,6 +116,13 @@
         "author": "Devin Lehmacher"
     },
     {
+        "name": "Psychic",
+        "description": "Know the number of Mafia members in the game.",
+        "team": "Town",
+        "author": "Devin Lehmacher",
+        "clarifications": "Does not know the number of third parties in the game."
+    },
+    {
         "name": "Seer",
         "description": "Every night learn if there was a guilty player on the block the previous day. Unblockable.",
         "team": "Town",
@@ -133,6 +147,12 @@
         "name": "Tracker",
         "description": "Tracks one player each night, seeing who they visit.",
         "team": "Town"
+    },
+    {
+        "name": "Veteran",
+        "description": "Once per game during the night, \"keep watch\", killing all players that visit you this night.",
+        "team": "Town",
+        "authoer": "Devin Lehmacher"
     },
     {
         "name": "Virgin",
