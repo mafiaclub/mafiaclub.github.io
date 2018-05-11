@@ -1,3 +1,4 @@
+// we use github as a prefix because this reduces latency on updates
 var prefix = 'https://raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
 
 var popover = function(name, description, team) {
@@ -9,6 +10,14 @@ var popover = function(name, description, team) {
     + name
     + '<\/button>';
 };
+
+var tabPlaceholder = function(tierID) {
+  var id = 'tab-placeholder-' + tierID;
+  return {
+    html: '<div id="' + id + '"><\/div>',
+    id: id
+  };
+}
 
 var tab = function(tier, active) {
   return '<li class="' + (active ? 'active' : '') + '">'
@@ -29,27 +38,40 @@ var tierList = function(tier, active) {
     + '<\/div>';
 }
 
-var makeList = function(tier, tiers, roles, active) {
-  var tier = tiers.find(x => tier === x.version);
-  var roles = roles.filter(x => tier.roles.includes(x.name));
-  $('#tier-tabs').append(tab(tier, active));
-  $('#tiers').append(tierList(tier, active));
-  $.each(roles, function(ix, e) {
-    $('#tier-' + tier.version + '-list')
-      .append(popover(e.name, e.description, e.team));
+var pathOf = function(fileName) {
+  return prefix + '/' + fileName;
+}
+
+var tierFileFor = function(tierID) {
+  return 'tiers/' + tierID + '.json';
+}
+
+var makeList = function(tierID, allRoles, active) {
+  // in order to avoid out of order initialization of tabs we put a placeholder
+  // before initializing it with the correct data
+  var placeholder = tabPlaceholder(tierID);
+  $('#tier-tabs').append(placeholder.html);
+  $.getJSON(pathOf(tierFileFor(tierID)), function(tier) {
+    var roles = allRoles.filter(x => tier.roles.includes(x.name));
+    $('#' + placeholder.id).replaceWith(tab(tier, active));
+    $('#tiers').append(tierList(tier, active));
+    $.each(roles, function(ix, e) {
+      $('#tier-' + tier.version + '-list')
+        .append(popover(e.name, e.description, e.team));
+    });
+    // make popovers actually into popovers
+    // Note: we need to do this initialization here because otherwise the
+    // elements might not have been created yet first
+    $('[data-toggle="popover"]').popover();
   });
 };
 
-$.getJSON(prefix + '/tier-manifest.json', function(data) {
-  $.getJSON(prefix + '/tiers.json', function(tiers) {
-    $.getJSON(prefix + '/roles.json', function(roles) {
-      // generate all of the tier lists
-      $.each(data, function(ix, e) {
-        var active = ix === 0;
-        makeList(e, tiers, roles, active);
-      });
-      // make popovers actually into popovers
-      $('[data-toggle="popover"]').popover();
+$.getJSON(prefix + '/tier-manifest.json', function(tiers) {
+  $.getJSON(prefix + '/roles.json', function(roles) {
+    // generate all of the tier lists
+    $.each(tiers, function(ix, e) {
+      var active = ix === 0;
+      makeList(e, roles, active);
     });
   });
 });

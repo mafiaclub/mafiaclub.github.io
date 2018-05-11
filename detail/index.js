@@ -1,12 +1,12 @@
+// we use github as a prefix because this reduces latency on updates
 var prefix = 'https://raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
 
 var tierID = window.location.search.substring(1);
 tierID = tierID.replace(/\./, '-');
 // it would be good to validate the tier string a little bit more
 
-$.getJSON(prefix + '/tiers.json', function(tiers) {
+$.getJSON(prefix + '/tiers/' + tierID + '.json', function(tier) {
   $.getJSON(prefix + '/roles.json', function(allRoles) {
-    var tier = tiers.find(x => tierID === x.version);
     console.log(tier);
     $('#tier-name').text(tier.name);
     $('#tier-description').text(tier.description);

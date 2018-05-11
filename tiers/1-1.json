@@ -1,0 +1,23 @@
+{
+    "version": "1-1",
+    "name": "Basic v1",
+    "description": "Original Basic set.",
+    "roles": [
+        "Townie",
+        "1-Shot Bulletproof Townie",
+        "1-Shot Vigilante",
+        "Busdriver",
+        "Deputy",
+        "Doctor",
+        "Mason",
+        "Mayor",
+        "Milkman",
+        "Miller",
+        "Sheriff",
+        "Mafia",
+        "Bootlegger",
+        "Godfather",
+        "Hooker",
+        "Serial Killer"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "version": "1",
+    "name": "Basic",
+    "description": "This set of roles is the simplest and is designed to introduce new players to the closed format of gameplay.",
+    "roles": [
+        "Townie",
+        "1-Shot Bulletproof Townie",
+        "1-Shot Vigilante",
+        "Deputy",
+        "Doctor",
+        "Mason",
+        "Milkman",
+        "Miller",
+        "Sheriff",
+        "Mafia",
+        "Bootlegger",
+        "Godfather",
+        "Hooker",
+        "Serial Killer"
+    ]
+}

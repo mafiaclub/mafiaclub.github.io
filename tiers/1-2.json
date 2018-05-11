@@ -1,0 +1,21 @@
+{
+    "version": "1-2",
+    "name": "Basic v2",
+    "description": "Modified version of Basic for the great simplification Spring 2018. Removes some confirmable roles, deemed unnecessary.",
+    "roles": [
+        "Townie",
+        "1-Shot Bulletproof Townie",
+        "1-Shot Vigilante",
+        "Deputy",
+        "Doctor",
+        "Mason",
+        "Milkman",
+        "Miller",
+        "Sheriff",
+        "Mafia",
+        "Bootlegger",
+        "Godfather",
+        "Hooker",
+        "Serial Killer"
+    ]
+}
