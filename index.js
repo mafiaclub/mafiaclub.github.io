@@ -1,13 +1,10 @@
-// we use github as a prefix because this reduces latency on updates
-var prefix = 'https://raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
-
 var popover = function(name, description, team) {
   return '<button type="button" class="btn btn-default" href="#" data-content="'
-    + description
+    + quoteattr(description)
     + '" rel="popover" data-placement="top" data-original-title="'
-    + name + ' - ' + team
+    + quoteattr(name + ' - ' + team)
     + '" data-toggle="popover" data-trigger="hover">'
-    + name
+    + quoteattr(name)
     + '<\/button>';
 };
 
@@ -21,18 +18,18 @@ var tabPlaceholder = function(tierID) {
 
 var tab = function(tier, active) {
   return '<li class="' + (active ? 'active' : '') + '">'
-    + '<a href="#tier-' + tier.version + '" data-toggle="tab" '
+    + '<a href="#tier-' + quoteattr(tier.version) + '" data-toggle="tab" '
     + 'aria-expanded="'
     + (active ? 'true' : 'false') + '">'
-    + tier.name
+    + quoteattr(tier.name)
     + '<\/a><\/li>';
 };
 
 var tierList = function(tier, active) {
   return '<div class="tab-pane fade' + (active ? ' active in' : '')
-    + '" id="tier-' + tier.version + '">'
-    + '<p>' + tier.description + '<\/p>'
-    + '<div id="tier-' + tier.version + '-list" class="container">'
+    + '" id="tier-' + quoteattr(tier.version) + '">'
+    + '<p>' + quoteattr(tier.description) + '<\/p>'
+    + '<div id="tier-' + quoteattr(tier.version) + '-list" class="container">'
     + '<\/div>'
     + '<p>For more details see <a href="/detail?' + tier.version + '">here</a>.</p>'
     + '<\/div>';

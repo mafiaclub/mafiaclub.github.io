@@ -1,6 +1,3 @@
-// we use github as a prefix because this reduces latency on updates
-var prefix = 'https://raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
-
 var tierID = window.location.search.substring(1);
 tierID = tierID.replace(/\./, '-');
 // it would be good to validate the tier string a little bit more
