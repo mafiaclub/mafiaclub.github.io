@@ -42,16 +42,16 @@
         "team": "Town"
     },
     {
-        "name": "Deputy",
-        "description": "Take over as Sheriff the night after the Sheriff dies.",
-        "team": "Town"
-    },
-    {
-        "name": "Detective",
+        "name": "Coroner",
         "description": "Visit a person. If they die find out what role their killer was.",
         "team": "Town",
         "author": "Chris Colen",
         "comment": "Created as a fake claim during a game. Initial name was necromancer."
+    },
+    {
+        "name": "Deputy",
+        "description": "Take over as Sheriff the night after the Sheriff dies.",
+        "team": "Town"
     },
     {
         "name": "Doctor",
