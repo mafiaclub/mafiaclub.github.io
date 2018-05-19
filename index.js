@@ -35,20 +35,12 @@ var tierList = function(tier, active) {
     + '<\/div>';
 }
 
-var pathOf = function(fileName) {
-  return prefix + '/' + fileName;
-}
-
-var tierFileFor = function(tierID) {
-  return 'tiers/' + tierID + '.json';
-}
-
 var makeList = function(tierID, allRoles, active) {
   // in order to avoid out of order initialization of tabs we put a placeholder
   // before initializing it with the correct data
   var placeholder = tabPlaceholder(tierID);
   $('#tier-tabs').append(placeholder.html);
-  $.getJSON(pathOf(tierFileFor(tierID)), function(tier) {
+  $.getJSON(prefix + '/' + tierFileFor(tierID), function(tier) {
     var roles = allRoles.filter(x => tier.roles.includes(x.name));
     $('#' + placeholder.id).replaceWith(tab(tier, active));
     $('#tiers').append(tierList(tier, active));
