@@ -230,7 +230,7 @@
     },
     {
         "name": "Illuminati",
-        "description": "Wakes with the Masons in addition to the Mafia."
+        "description": "Wakes with the Masons in addition to the Mafia.",
         "team": "Mafia",
         "author": "Craig Santo"
     },  
