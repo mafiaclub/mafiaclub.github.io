@@ -229,6 +229,12 @@
         "team": "Mafia"
     },
     {
+        "name": "Illuminati",
+        "description": "Wakes with the Masons in addition to the Mafia."
+        "team": "Mafia",
+        "author": "Craig Santo"
+    },  
+    {
         "name": "Illusionist",
         "description": "Visit two players. Any visit on one of those players instead visits the other player this night.",
         "team": "Mafia"
