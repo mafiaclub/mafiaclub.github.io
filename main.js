@@ -21,5 +21,4 @@ function quoteattr(s, preserveCR) {
         */
         .replace(/\r\n/g, preserveCR) /* Must be before the next replacement. */
         .replace(/[\r\n]/g, preserveCR);
-        ;
 }
