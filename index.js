@@ -31,7 +31,7 @@ var tierList = function(tier, active) {
     + '<p>' + quoteattr(tier.description) + '<\/p>'
     + '<div id="tier-' + quoteattr(tier.version) + '-list" class="container">'
     + '<\/div>'
-    + '<p><a href="/detail?' + tier.version + '">Expand tier descriptions.</a></p>'
+    + '<p><a href="/detail?' + tier.version + '">Expand role descriptions.</a></p>'
     + '<\/div>';
 }
 
