@@ -5,7 +5,7 @@ tierID = tierID.replace(/\./, '-');
 $.getJSON(prefix + '/tiers/' + tierID + '.json', function(tier) {
   $.getJSON(prefix + '/roles.json', function(allRoles) {
     console.log(tier);
-    $('#tier-heading').text(tier.name);
+    $('#tier-name').text(tier.name);
     $('#tier-description').text(tier.description);
     var roles = allRoles.filter(x => tier.roles.includes(x.name));
     var townRoles = [];
@@ -61,4 +61,50 @@ $.getJSON(prefix + '/tiers/' + tierID + '.json', function(tier) {
     }, thirdPartyRoles);
 
   });
+});
+
+// global state for the history explorer
+var global = {
+  history: null,
+  changes: null,
+  currentChange: null,
+  detailed: false,
+};
+
+function dateString() {
+  if (global.currentChange == null || global.currentChange < 1) {
+    throw "Invalid currentChange while trying to compute dateString()";
+  } else if (global.currentChange == 1) {
+    var date = new Date(global.history[0].date);
+    return 'on ' + date.toDateString();
+  } else {
+    var date = new Date(global.history[global.currentChange].date);
+    return 'since ' + date.toDateString();
+  }
+}
+
+function updateHistoryExplorer() {
+  // if we don't have a current change we can't show the history
+  if (global.currentChange == null) { return; }
+
+  var shaNew = global.history[0].sha;
+  var shaOld = global.history[global.currentChange].sha;
+  withTierChanges(tierID, shaNew, shaOld, function(changes) {
+    global.changes = changes;
+    console.log(changes);
+    $('#tier-change-additions').text('+' + changes.added.length);
+    $('#tier-change-removals').text('-' + changes.removed.length);
+    $('#tier-change-date').text(dateString());
+  });
+}
+
+withTierHistory(tierID, function(history) {
+  global.history = history;
+  console.log(history);
+
+  // if there is no history don't bother displaying the history explorer
+  if (history.length <= 1) { return; }
+
+  global.currentChange = 1;
+  updateHistoryExplorer();
 });
