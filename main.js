@@ -1,7 +1,7 @@
 // we use github as a prefix because this reduces latency on updates
 var prefix = 'https://raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master';
 
-var tierFileFor = function(tierID) {
+function tierFileFor(tierID) {
   return 'tiers/' + tierID + '.json';
 }
 
