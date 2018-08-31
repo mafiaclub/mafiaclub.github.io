@@ -13,26 +13,35 @@
   <body>
 
     <div class="container">
-    <h1 id="tier-heading"></h1>
-    <p id="tier-description"></p>
-    <div class="container" id="role-list">
-      <h3>Town</h3>
-      <div class="row">
-        <div class="col-sm-6" id="town-role-list-1">
-          <ul class="list"></ul>
+      <h1 id="tier-heading">
+        <span id="tier-name"></span>
+        <small class="text-muted" id="tier-change">
+          Last Change
+          <span id="tier-change-date"></span>
+          <span class="text-success" id="tier-change-additions"></span>
+          <span class="text-danger" id="tier-change-removals"></span>
+        </small>
+      </h1>
+      <p id="tier-description"></p>
+      <div class="container" id="role-list">
+        <h3>Town</h3>
+        <div class="row">
+          <div class="col-sm-6" id="town-role-list-1">
+            <ul class="list"></ul>
+          </div>
+          <div class="col-sm-6" id="town-role-list-2">
+            <ul class="list"></ul>
+          </div>
         </div>
-        <div class="col-sm-6" id="town-role-list-2">
-          <ul class="list"></ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6" id="mafia-role-list">
-          <h3>Mafia</h3>
-          <ul class="list"></ul>
-        </div>
-        <div class="col-sm-6" id="third-party-role-list">
-          <h3>Third Party</h3>
-          <ul class="list"></ul>
+        <div class="row">
+          <div class="col-sm-6" id="mafia-role-list">
+            <h3>Mafia</h3>
+            <ul class="list"></ul>
+          </div>
+          <div class="col-sm-6" id="third-party-role-list">
+            <h3>Third Party</h3>
+            <ul class="list"></ul>
+          </div>
         </div>
       </div>
     </div>
