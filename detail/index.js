@@ -5,7 +5,7 @@ tierID = tierID.replace(/\./, '-');
 $.getJSON(prefix + '/tiers/' + tierID + '.json', function(tier) {
   $.getJSON(prefix + '/roles.json', function(allRoles) {
     console.log(tier);
-    $('#tier-name').text(tier.name);
+    $('#tier-heading').text(tier.name);
     $('#tier-description').text(tier.description);
     var roles = allRoles.filter(x => tier.roles.includes(x.name));
     var townRoles = [];
