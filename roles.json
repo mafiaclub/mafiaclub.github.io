@@ -117,7 +117,7 @@
     },
     {
         "name": "Psychic",
-        "description": "Know the number of Mafia members in the game.",
+        "description": "Learn the number of guilty players left in the game each night.",
         "team": "Town",
         "author": "Devin Lehmacher",
         "clarifications": "Does not know the number of third parties in the game."
@@ -233,7 +233,7 @@
         "description": "Wakes with the Masons in addition to the Mafia.",
         "team": "Mafia",
         "author": "Craig Santo"
-    },  
+    },
     {
         "name": "Illusionist",
         "description": "Visit two players. Any visit on one of those players instead visits the other player this night.",
