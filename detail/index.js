@@ -66,7 +66,6 @@ $.getJSON(prefix + '/tiers/' + tierID + '.json', function(tier) {
 // global state for the history explorer
 var global = {
   history: null,
-  changes: null,
   currentChange: null,
   detailed: false,
 };
@@ -83,18 +82,66 @@ function dateString() {
   }
 }
 
+function changesWidget(changes) {
+  return '<span class="text-success">+' + changes.added.length + '<\/span>'
+    + '<span class="text-danger">-' + changes.removed.length + '<\/span>';
+}
+
+function older(text) {
+  return moveHistory('global.currentChange++;', text);
+}
+
+function newer(text) {
+  return moveHistory('global.currentChange--;', text);
+}
+
+function moveHistory(move, text) {
+  return '<a href="#" onclick="'
+    + move
+    + 'updateHistoryExplorer();'
+    + 'return false;'
+    + '">'
+    + text
+    + '</a>';
+}
+
+function historyWidget(changes) {
+  switch (global.currentChange) {
+    case null:
+      throw "Invalid currentChange in historyWidget";
+    case 0:
+      return older("Show changes");
+    case 1:
+      return changesWidget(changes)
+        + ' ' + dateString()
+        + ' ' + older("Older")
+        + ' ' + newer("Hide changes");
+    case global.history.length - 1:
+      return changesWidget(changes)
+        + ' ' + dateString()
+        + ' ' + newer("Newer");
+    default:
+      return changesWidget(changes)
+        + ' ' + dateString()
+        + ' ' + older("Older")
+        + ' ' + newer("Newer");
+  }
+}
+
+// renders the state stored in global
 function updateHistoryExplorer() {
   // if we don't have a current change we can't show the history
   if (global.currentChange == null) { return; }
 
   var shaNew = global.history[0].sha;
+  console.log(global.history[global.currentChange]);
+  console.log(global.currentChange);
+  console.log(global.history);
   var shaOld = global.history[global.currentChange].sha;
   withTierChanges(tierID, shaNew, shaOld, function(changes) {
-    global.changes = changes;
     console.log(changes);
-    $('#tier-change-additions').text('+' + changes.added.length);
-    $('#tier-change-removals').text('-' + changes.removed.length);
-    $('#tier-change-date').text(dateString());
+    $('#tier-changes').html(historyWidget(changes));
+    // update colors if necessary on roles
   });
 }
 
@@ -104,7 +151,10 @@ withTierHistory(tierID, function(history) {
 
   // if there is no history don't bother displaying the history explorer
   if (history.length <= 1) { return; }
+  console.log(history);
 
-  global.currentChange = 1;
+  global.currentChange = 0;
+  // idea start current change at 0; which just displays a thing that says
+  // show history
   updateHistoryExplorer();
 });
