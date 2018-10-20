@@ -280,7 +280,7 @@
     },
     {
         "name": "Serial Killer",
-        "description": "Kill one person each night. The first night choose either: bulletproof (thumbs up) or innocent to Sheriff checks and one shot bullet proof (thumbs down).",
+        "description": "Kill one person each night. The first night choose either: bulletproof (thumbs up) or innocent, untrackable, unwatchable and one shot bullet proof (thumbs down).",
         "team": "Third Party"
     },
     {
