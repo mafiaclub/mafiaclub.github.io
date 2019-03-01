@@ -435,7 +435,7 @@
     },
         {
         "name": "Golem",
-        "description": "Can only die by fire or lynching. Visit anyone who dies."
+        "description": "Can only die by fire or lynching. Visit anyone who dies.",
         "team": "Town"
     },
         {
