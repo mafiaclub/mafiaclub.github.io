@@ -289,73 +289,73 @@
         "team": "Third Party"
     },
     {
-        "name": "Gamemaster"
-        "description": "Know every role in the game. Win if only two people remain, and the other is a 3rd party"
+        "name": "Gamemaster",
+        "description": "Know every role in the game. Win if only two people are left, and the other is a third party.",
         "team": "Third Party"
     },
     {
-        "name": "Dragon"
-        "description": "Kill once per night. Once per game, at any time, burn two people. This can change the outcome of a vote."
+        "name": "Dragon",
+        "description": "Kill once per night. Once per game, at any time, burn two people. This can change the outcome of a vote.",
         "team": "Third Party"
     },
     {
-        "name": "Executioner"
-        "description": "The block is one person larger. Choose someone each night: they become the last person on the block. If the vote ties, your choice dies."
+        "name": "Executioner",
+        "description": "The block is one person larger. Choose someone each night: they become the last person on the block. If the vote ties, your choice dies.",
         "team": "Town"
     },
     {
-        "name": "Tree-Hat"
-        "description": "1-shot bulletproof. While bulletproof, appear guilty and visit one person each night to determine if they wake up."
+        "name": "Tree-Hat",
+        "description": "1-shot bulletproof. While bulletproof, appear guilty and visit one person each night to determine if they wake up.",
         "team": "Town"
     },
     {
-        "name": "Lawyer"
-        "description": "Defend one person each night. If three or more people oppose their lynching the next day, they do not die. Otherwise, you die with them. The other mafia do not know who you are. Do not wake with the Mafia."
+        "name": "Lawyer",
+        "description": "Defend one person each night. If three or more people oppose their lynching the next day, they do not die. Otherwise, you die with them. The other mafia do not know who you are. Do not wake with the Mafia.",
         "team": "Mafia"
     },
     {
-        "name": "Nullifier"
-        "description": "Choose someone each night. They can only be targeted by investigative and killing roles."
+        "name": "Nullifier",
+        "description": "Choose someone each night. They can only be targeted by investigative and killing roles.",
         "team": "Town"
     },
     {
-        "name": "Sage"
-        "description": "Non-killing roles targeting you are reflected"
+        "name": "Sage",
+        "description": "Non-killing roles targeting you are reflected",
         "team": "Town"
     },
     {
-        "name": "Acolyte"
-        "description": "Know the Sage. Become the Sage if the Sage dies"
+        "name": "Acolyte",
+        "description": "Know the Sage. Become the Sage if the Sage dies",
         "team": "Town"
     },
     {
-        "name": "General"
-        "description": "While you live, all town roles are mortally wounded instead of killed. They die after the vote instead of in the morning. Mortally wounded roles are treated as dead for win conditions."
+        "name": "General",
+        "description": "While you live, all town roles are mortally wounded instead of killed. They die after the vote instead of in the morning. Mortally wounded roles are treated as dead for win conditions.",
         "team": "Town"
     },
     {
-        "name": "Arms Dealer"
-        "description": "Arm someone each night. Their night action is also a kill"
+        "name": "Arms Dealer",
+        "description": "Arm someone each night. Their night action is also a kill",
         "team": "Mafia"
     },
     {
-        "name": "Igniter"
-        "description": "Twice per game, turn the communal Mafia kill into a burn"
+        "name": "Igniter",
+        "description": "Twice per game, turn the communal Mafia kill into a burn",
         "team": "Mafia"
     },
     {
-        "name": "Sleepwalker V2"
-        "description": "Visit one person at random each night. If you are visited by an evil role, learn that role."
+        "name": "Sleepwalker V2",
+        "description": "Visit one person at random each night. If you are visited by an evil role, learn that role.",
         "team": "Town"
     },
     {
-        "name": "Commander"
-        "description": "Choose someone to act twice each night"
+        "name": "Commander",
+        "description": "Choose someone to act twice each night",
         "team": "Town"
     },
     {
-        "name": "Sandman"
-        "description": "Choose someone each night. They do not wake up for any reason"
+        "name": "Sandman",
+        "description": "Choose someone each night. They do not wake up for any reason",
         "team": "Town"
     }
 ]
