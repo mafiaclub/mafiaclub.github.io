@@ -357,5 +357,100 @@
         "name": "Sandman",
         "description": "Choose someone each night. They do not wake up for any reason",
         "team": "Town"
+    },
+    {
+        "name": "Apprentice",
+        "description": "Once per game, choose someone. At the end of the next day, you become their admirer, with their win condition (Announced “The Apprentice has chosen a master”) and receive relevant information the following night. If they die before the next night, you immediately ascend. Bulletproof and Fireproof until you choose.",
+        "team": "Third Party"
+    },
+    {
+        "name": "Accuser",
+        "description": "Choose someone each night. They are automatically the last person on the block",
+        "team": "Mafia"
+    },
+    {
+        "name": "Fireman",
+        "description": "While you live, all other roles are fireproof. Fire-capable roles know you are in the game.",
+        "team": "Town"
+    },
+    {
+        "name": "Judge",
+        "description": "Once per game, after the block is formed, stand and run the votes, doing any or all of the following: force a no-lynch; force a reblock, choosing the new block; skip any defenses/discussions; silence/unsilence anyone.",
+        "team": "Town"
+    },
+    {
+        "name": "Siren",
+        "description": "Choose someone each night. If they visit someone, they instead visit you. 1-shot bulletproof.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Tactician",
+        "description": "If the Mafia try to kill someone already being targeted by a killing role, you wake up again and can choose to kill someone else. The same person performs the kill.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Bodysnatcher",
+        "description": "Choose two people each night. If either die before the next night, the other's role is announced.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Backstabber",
+        "description": "1-shot bulletproof, fireproof, innocent. Wake with the Mafia, appear normal Mafia. If you perform the kill, it does not happen. If the Mafia have won, regain bulletproof and become a serial killer.",
+        "team": "Third Party"
+    },
+    {
+        "name": "Tinker",
+        "description": "Once per game, choose someone. They regain all uses of their abilities, including bulletproof. You can target yourself only once. 1-shot bulletproof.",
+        "team": "Town"
+    },
+    {
+        "name": "Merchant",
+        "description": "The night after you receive this card, choose someone to switch roles with. No win condition",
+        "team": "Third Party"
+    },
+    {
+        "name": "Impersonator",
+        "description": "Choose someone each night. They can't nominate or second the next day, and their voting powers are transferred to you.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Servant",
+        "description": "Aid someone each night. Their night action is infallible.",
+        "team": "Town"
+    },
+    {
+        "name": "Hangman",
+        "description": "While you live, two people get lynched each day and the block is one person larger. If there is a tie for second lynch, there is no second lynch.",
+        "team": "Mafia"
+    },
+    {
+        "name": "Orator",
+        "description": "During each of your defenses, make a speech. You cannot be lynched.",
+        "team": "Town"
+    },
+    {
+        "name": "Miner",
+        "description": "1-shot bulletproof. While bulletproof, see everyone who visits you.",
+        "team": "Town"
+    },
+        {
+        "name": "Golem",
+        "description": "Can only die by fire or lynching. Visit anyone who dies."
+        "team": "Town"
+    },
+        {
+        "name": "High Mason",
+        "description": "While you live, masons wake each night and get a communal doctor save. If the illuminati performs the save, it does not happen. Your existence is revealed to the masons, but not which mason you are.",
+        "team": "Town"
+    },
+        {
+        "name": "Samurai",
+        "description": "Infinite-shot vigilante. If you are the sole cause of an innocent death, you die.",
+        "team": "Town"
+    },
+        {
+        "name": "Hypnotist",
+        "description": "Choose someone each night, and choose who they visit.",
+        "team": "Mafia"
     }
 ]
