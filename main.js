@@ -5,6 +5,22 @@ var tierFileFor = function(tierID) {
   return 'tiers/' + tierID + '.json';
 }
 
+
+// Takes a json object of all of the role data and a role name and produces
+// the object representing that role, with additional information.
+// Returns undefined if the role is not defined.
+var getRoleData = function(allRoleData, roleName) {
+  return allRoleData.find(x => x.name === roleName);
+}
+
+var toArray = function(x) {
+  if (x === undefined) {
+    return [];
+  } else {
+    return [x];
+  }
+}
+
 // https://stackoverflow.com/questions/7753448/how-do-i-escape-quotes-in-html-attribute-values
 function quoteattr(s, preserveCR) {
     preserveCR = preserveCR ? '&#13;' : '\n';

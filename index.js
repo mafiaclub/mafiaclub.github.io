@@ -41,7 +41,7 @@ var makeList = function(tierID, allRoles, active) {
   var placeholder = tabPlaceholder(tierID);
   $('#tier-tabs').append(placeholder.html);
   $.getJSON(prefix + '/' + tierFileFor(tierID), function(tier) {
-    var roles = allRoles.filter(x => tier.roles.includes(x.name));
+    var roles = tier.roles.flatMap(x => toArray(getRoleData(allRoles, x)));
     $('#' + placeholder.id).replaceWith(tab(tier, active));
     $('#tiers').append(tierList(tier, active));
     $.each(roles, function(ix, e) {
