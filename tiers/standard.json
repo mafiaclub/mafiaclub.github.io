@@ -1,5 +1,5 @@
 {
-    "version": "3",
+    "version": "standard",
     "name": "Standard",
     "description": "This is the set of roles that we play with most often.",
     "roles": [
