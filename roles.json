@@ -409,6 +409,18 @@
         "team": "Third Party"
     },
     {
+        "name": "Herbalist",
+        "description": "Choose someone each night.  They will be informed that they have been poisoned, and will die the night after unless they are saved.  Win with the arsonist.",
+        "team": "Third Party"
+        "author": "Ben"
+    },
+    {
+        "name": "Jester"
+        "description": "At the start of the game choose a faction to win with.  You will be told who else is in that faction."
+        "team": "Third Party"
+        "author": "Ben"
+    },
+    {
         "name": "Impersonator",
         "description": "Choose someone each night. They can't nominate or second the next day, and their voting powers are transferred to you.",
         "team": "Mafia"
