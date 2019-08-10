@@ -1,4 +1,4 @@
-[
+﻿[
     {
         "name": "Townie",
         "description": "Normal Town.",
@@ -452,5 +452,95 @@
         "name": "Hypnotist",
         "description": "Choose someone each night, and choose who they visit.",
         "team": "Mafia"
+    },
+        {
+        "name": "Mass Claim",
+        "description": "Everyone publicly announces their role.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Counter Claim",
+        "description": "When a second person claims the same thing as someone else. In normal games there is only one of each role (excluding normal townie/mafia) so when two people claim the same role one must be lying.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Soft Claim",
+        "description": "When someone hints about their role, without explicitly stating it",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Hard Claim",
+        "description": "When someone announces their exact role",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Fake Claim",
+        "description": "When someone claims a role incorrectly.  For example, a member of the mafia may fake claim that they are town sided.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Open",
+        "description": "A game in which all of the roles in the game are announced, but roles are not announced as people die.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Closed",
+        "description": "A game in which no roles are annouced, and roles are revealed as people die.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Super Closed",
+        "description": "A game which may have non standard rules, roles, and win conditions.  Often themed, these games are often chaotic.  Roles are not announced at the begining, and usually are revealed as people die.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Mod Fail",
+        "description": "When the moderator makes a mistake.  May result in everyone going back to sleep while the mistake is corrected.  The prevalence of mod fails shockingly has an inverse correlation to the amount of time till sunrise.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Super Citizen",
+        "description": "One person who everyone tells their roles to privately.  This is usually someone who has been confirmed as town, and they will likely organize all townie's actions based on their knowledge",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Town Sided Arsonist",
+        "description": "Town sided arsonists are arsonists who decide to play for the towns benifit instead of their own.  They will often douse themselves on the first night, guranteeing that when they light up they will die.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Quick Block",
+        "description": "Not to be confused with a sudden or swift block.  When (usually two) players quickly nominate and second the entire block the moment that the mod has finished with announcements.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Sudden Block",
+        "description": "Not to be confused with a quick or swift block.  When (usually two) players suddenly nominate and second the entire block, after some time has passed during the day.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Swift Block",
+        "description": "Not to be confused with a sudden or quick block. Ask Jeremy?",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Saving Role",
+        "description": "Any role that can prevent a death from occuring.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Town Sided Killing Role",
+        "description": "Any town sided role that can kill.",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Information Role",
+        "description": "Any role that can gain information about other players through their night ability",
+        "team": "Definitions" 
+    },
+        {
+        "name": "Confirmable/Can Be Confirmed",
+        "description": "Any role that can prove that they are who they say they are.",
+        "team": "Definitions" 
     }
 ]
