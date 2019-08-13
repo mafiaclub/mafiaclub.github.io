@@ -399,6 +399,11 @@
         "team": "Third Party"
     },
     {
+        "name": "Scenic",
+        "description": "Choose a player each night.  You will appear to visit them (and only them) even if you perform the mafia kill.",
+        "team": "Mafia"
+    },
+    {
         "name": "Tinker",
         "description": "Once per game, choose someone. They regain all uses of their abilities, including bulletproof. You can target yourself only once. 1-shot bulletproof.",
         "team": "Town"
