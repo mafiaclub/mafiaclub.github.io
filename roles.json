@@ -416,13 +416,19 @@
     {
         "name": "Herbalist",
         "description": "Choose someone each night.  They will be informed that they have been poisoned, and will die the night after unless they are saved.  Win with the arsonist.",
-        "team": "Third Party"
+        "team": "Third Party",
         "author": "Ben"
     },
     {
-        "name": "Jester"
-        "description": "At the start of the game choose a faction to win with.  You will be told who else is in that faction."
-        "team": "Third Party"
+        "name": "Psychic V2",
+        "description": "Prior to each morning you will be told who has been killed.  You may choose to save one person per game.",
+        "team": "Town",
+        "author": "Ben"
+    },
+    {
+        "name": "Jester",
+        "description": "At the start of the game choose a faction to win with.  You will be told who else is in that faction.",
+        "team": "Third Party",
         "author": "Ben"
     },
     {
@@ -468,7 +474,8 @@
         {
         "name": "Hypnotist",
         "description": "Choose someone each night, and choose who they visit.",
-        "team": "Mafia"
+        "team": "Mafia",
+        "comments": "seems really dificult to mod, or really op depending on how its run.  Either gets control, and learns alot about their role (how many targets, or thumb up thumb down etc) or can fail if they choose someone who doesnt visit a single person each night."
     },
         {
         "name": "Mass Claim",
