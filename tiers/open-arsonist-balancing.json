@@ -1,0 +1,20 @@
+{
+    "version": "open-arsonist-balancing",
+    "name": "Arsonist Balance",
+    "description": "(13 player) An open setup meant to test the idea of having more than one arsonist.  Arsonists are told the others identity, but do not wake together (no coordinating).",
+    "roles": [
+        "Tracker",
+        "Fireproof Townie",
+        "Sheriff",
+        "1-Shot Vigilante",
+        "Bard",
+        "Bodyguard",
+        "Townie",
+        "Witch",
+        "Godfather",
+        "Madman",
+        "1-Shot Bulletproof Mafia",
+        "Arsonist",
+        "Arsonist"
+    ]
+}
