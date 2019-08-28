@@ -420,6 +420,12 @@
         "author": "Ben"
     },
     {
+        "name": "Herbalist V2",
+        "description": "Poison a player each night.  They will die during the day.",
+        "team": "Third Party",
+        "author": "Ben"
+    },
+    {
         "name": "Psychic V2",
         "description": "Prior to each morning you will be told who has been killed.  You may choose to save one person per game.",
         "team": "Town",
