@@ -1,7 +1,7 @@
 {
     "version": "open-arsonist-balancing",
     "name": "Arsonist Balance",
-    "description": "(13 player) An open setup meant to test the idea of having more than one arsonist.  Arsonists are told the others identity, but do not wake together (no coordinating).",
+    "description": "(13 player) An open setup meant to test the idea of having more than one arsonist.  Arsonists are told the others identity, but do not wake together (no coordinating).  If either ignites any player that is doused will burn.",
     "roles": [
         "Tracker",
         "Fireproof Townie",
