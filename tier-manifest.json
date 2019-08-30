@@ -1,6 +1,8 @@
 [
+    "basic",
     "standard",
     "reduced",
+    "full",
     "CommonTerms",
     "open-arsonist-balancing"
 ]
