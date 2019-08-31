@@ -1,7 +1,7 @@
 {
     "version": "reduced",
     "name": "Reduced",
-    "description": "This is standard from 2019sp but with the boring roles removed. Nancy, Brett, Rishi, and Devin pretty much agreed that all of the removed roles should be removed.",
+    "description": "Standard set to play with for Fa19.",
     "roles": [
         "Townie",
         "1-Shot Bulletproof Townie",
@@ -22,6 +22,7 @@
         "Prophet",
         "Seer",
         "Sleepwalker",
+        "Deputy",
         "Sheriff",
         "Tracker",
         "Veteran",
@@ -31,8 +32,10 @@
 
         "Mafia",
         "1-Shot Bulletproof Mafia",
+        "Fireproof Mafia",
         "Bootlegger",
         "Framer",
+        "Consiglier v2",
         "Godfather",
         "Gravedigger",
         "Hitman",
