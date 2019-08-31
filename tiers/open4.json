@@ -1,19 +1,19 @@
 {
     "version": "open1",
     "name": "Open1",
-    "description": "An open setup for 12",
+    "description": "A terrible complicated setup for 12",
     "roles": [
         "Tracker",
-        "Fireproof Townie",
+        "Milkman",
         "Sheriff",
         "1-Shot Vigilante",
         "Doctor",
         "Bodyguard",
         "Sleepwalker",
-        "Bard",
-        "Godfather",
-        "Lynchpin",
-        "Fireproof Mafia",
-        "Arsonist",
+        "Watcher",
+        "Consiglier v2",
+        "Bootlegger",
+        "Serial Killer",
+        "Illusionist",
     ]
 }
