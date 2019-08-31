@@ -16,35 +16,38 @@
 	  <p>
 	    Our site is currently undergoing minor upgrades.  If you notice any problems, feel free to tell Ben.
 	  </p>
-	</div>
-    <p>
-    Mafia is a fun game of lies, logic, and psychology. We play Mafia with a
-    large variety of exciting roles which can be found below.
-	</p>
-	<p>
-	If you want to know how we play, see the <a href="/rules/">rules</a>.
-    </p>
-
-    <!-- Initialized by index.js from json data -->
-    <ul id="tier-tabs" class="nav nav-tabs">
-    </ul>
-    <div id="tiers" class="tab-content">
-    </div>
-    <br>
-	<button id="calendarShow" class="collapsible btn btn-default" align="center">Collapse Calendar</button>
-    <div id="cal" class="container">
-      <ul id="calendar">
-	    <li>October 25 - Halloween Super Closed</li>
-	  </ul>
-    </div>
-
+  </div>
+  <div class="container">
+    <form>
+      Name or theme of game:<br>
+      <input type="text" name="name1"> <br>
+      Date of play:<br>
+      <input type="date" name="date"><br>
+      Name of creator:<br>
+      <input type="text" name="creator"><br>
+      Summary:<br>
+      <input type="text" name="summary"><br>
+      Full rules and/or lore:<br>
+      <textarea name="rules" rows="5" cols="90"></textarea><br>
+      Please enter all of the roles that were included alternating role name and description on each line:<br>
+      <textarea name="roles" rows="5" cols="90">
+role1
+description1
+role2
+description2
+    </textarea><br>
+      Is there a story about how the game was played?<br>
+      <textarea name="story" rows="5" cols="90"></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
     <script type="text/javascript" src="/main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script type="text/javascript" src="/index.js"></script>
-	<script type="text/javascript" src="/collapse.js"></script>
+	<script type="text/javascript" src="/collapse.js"></script> -->
   </body>
 </html>

@@ -9,12 +9,12 @@ for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
-      this.value = "Collapse Calendar";
+      coll[i].value = "Collapse Calendar";
       console.log("Expanded Calendar")
     }
     else {
       content.style.display = "block";
-      this.value = "Expand Calendar";
+      coll[i].value = "Expand Calendar";
       console.log("Collapsed Calendar")
     }
   });
