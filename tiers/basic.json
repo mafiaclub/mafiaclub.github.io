@@ -13,10 +13,21 @@
         "Mason",
         "Milkman",
         "Miller",
+        "Bodyguard",
+        "Oracle",
+        "Old Man with a Shotgun",
+        "Sleepwalker",
+        "Jailer",
+
         "Mafia",
-        "Framer",
+        "Illuminati",
+        "Bootlegger",
+        "Hitman",
+        "Strongman",
         "Godfather",
         "Hooker",
+
+
         "Serial Killer"
     ]
 }
