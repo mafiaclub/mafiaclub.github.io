@@ -1,11 +1,12 @@
 {
     "version": "open1",
     "name": "Open1",
-    "description": "A terrible complicated setup for 12",
+    "description": "A terrible complicated setup for 13",
     "roles": [
         "Tracker",
-        "Milkman",
+        "Jailer",
         "Sheriff",
+        "Milkman",
         "1-Shot Vigilante",
         "Doctor",
         "Bodyguard",
