@@ -315,7 +315,7 @@
     },
     {
         "name": "General",
-        "description": "While you live, all town roles are mortally wounded instead of killed. They die after the vote instead of in the morning. Mortally wounded roles are treated as dead for win conditions.",
+        "description": "While you live, all roles are mortally wounded instead of killed. They die after the vote instead of in the morning. Mortally wounded roles are treated as dead for win conditions.",
         "team": "Town"
     },
     {
