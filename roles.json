@@ -289,6 +289,16 @@
         "team": "Third Party"
     },
     {
+        "name": "Gamemaster",
+        "description": "Know every role in the game. Win if only two people are left, and the other is a third party.",
+        "team": "Third Party"
+    },
+    {
+        "name": "Dragon",
+        "description": "Kill once per night. Once per game, at any time, burn two people. This can change the outcome of a vote.",
+        "team": "Third Party"
+    },
+    {
         "name": "Executioner",
         "description": "The block is one person larger. Choose someone each night: they become the last person on the block. If the vote ties, your choice dies.",
         "team": "Town"
@@ -302,6 +312,11 @@
         "name": "Lawyer",
         "description": "Defend one person each night. If three or more people oppose their lynching the next day, they do not die. Otherwise, you die with them. The other mafia do not know who you are. Do not wake with the Mafia.",
         "team": "Mafia"
+    },
+    {
+        "name": "Nullifier",
+        "description": "Choose someone each night. They can only be targeted by investigative and killing roles.",
+        "team": "Town"
     },
     {
         "name": "Sage",
@@ -320,7 +335,7 @@
     },
     {
         "name": "Arms Dealer",
-        "description": "Once per game, choose someone to arm. Their night action is also a kill",
+        "description": "Arm someone each night. Their night action is also a kill",
         "team": "Mafia"
     },
     {
@@ -334,6 +349,16 @@
         "team": "Town"
     },
     {
+        "name": "Commander",
+        "description": "Choose someone to act twice each night",
+        "team": "Town"
+    },
+    {
+        "name": "Sandman",
+        "description": "Choose someone each night. They do not wake up for any reason",
+        "team": "Town"
+    },
+    {
         "name": "Apprentice",
         "description": "Once per game, choose someone. At the end of the next day, you become their admirer, with their win condition (Announced “The Apprentice has chosen a master”) and receive relevant information the following night. If they die before the next night, you immediately ascend. Bulletproof and Fireproof until you choose.",
         "team": "Third Party"
@@ -342,6 +367,16 @@
         "name": "Accuser",
         "description": "Choose someone each night. They are automatically the last person on the block",
         "team": "Mafia"
+    },
+    {
+        "name": "Fireman",
+        "description": "While you live, all other roles are fireproof. Fire-capable roles know you are in the game.",
+        "team": "Town"
+    },
+    {
+        "name": "Judge",
+        "description": "Once per game, after the block is formed, stand and run the votes, doing any or all of the following: force a no-lynch; force a reblock, choosing the new block; skip any defenses/discussions; silence/unsilence anyone.",
+        "team": "Town"
     },
     {
         "name": "Siren",
@@ -374,6 +409,11 @@
         "team": "Town"
     },
     {
+        "name": "Merchant",
+        "description": "The night after you receive this card, choose someone to switch roles with. No win condition",
+        "team": "Third Party"
+    },
+    {
         "name": "Herbalist",
         "description": "Choose someone each night.  They will be informed that they have been poisoned, and will die the night after unless they are saved.  Win with the arsonist.",
         "team": "Third Party",
@@ -398,6 +438,11 @@
         "author": "Ben"
     },
     {
+        "name": "Impersonator",
+        "description": "Choose someone each night. They can't nominate or second the next day, and their voting powers are transferred to you.",
+        "team": "Mafia"
+    },
+    {
         "name": "Servant",
         "description": "Aid someone each night. Their night action is infallible.",
         "team": "Town"
@@ -406,6 +451,11 @@
         "name": "Hangman",
         "description": "While you live, two people get lynched each day and the block is one person larger. If there is a tie for second lynch, there is no second lynch.",
         "team": "Mafia"
+    },
+    {
+        "name": "Orator",
+        "description": "During each of your defenses, make a speech. You cannot be lynched.",
+        "team": "Town"
     },
     {
         "name": "Miner",
@@ -418,9 +468,20 @@
         "team": "Town"
     },
         {
+        "name": "High Mason",
+        "description": "While you live, masons wake each night and get a communal doctor save. If the illuminati performs the save, it does not happen. Your existence is revealed to the masons, but not which mason you are.",
+        "team": "Town"
+    },
+        {
         "name": "Samurai",
         "description": "Infinite-shot vigilante. If you are the sole cause of an innocent death, you die.",
         "team": "Town"
+    },
+        {
+        "name": "Hypnotist",
+        "description": "Choose someone each night, and choose who they visit.",
+        "team": "Mafia",
+        "comments": "seems really dificult to mod, or really op depending on how its run.  Either gets control, and learns alot about their role (how many targets, or thumb up thumb down etc) or can fail if they choose someone who doesnt visit a single person each night."
     },
         {
         "name": "Mass Claim",
