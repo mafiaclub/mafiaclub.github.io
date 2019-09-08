@@ -7,15 +7,20 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-      coll[i].value = "Collapse Calendar";
-      console.log("Expanded Calendar")
-    }
-    else {
+    if (content.style.display === "none") {
       content.style.display = "block";
       coll[i].value = "Expand Calendar";
-      console.log("Collapsed Calendar")
+      console.log("Collapse Calendar")
+    }
+    else if (content.style.display === "block"){
+      content.style.display = "none";
+      coll[i].value = "Collapse Calendar";
+      console.log("Expand Calendar")
+    }
+    else{
+      content.style.display = "block";
+      coll[i].value = "Expand Calendar";
+      console.log("Collapse Calendar")
     }
   });
 }
