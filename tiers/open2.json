@@ -1,19 +1,17 @@
 {
     "version": "open1",
     "name": "Open2",
-    "description": "An open setup for 12",
+    "description": "An open setup for 10",
     "roles": [
-        "Tracker",
-        "Fireproof Townie",
+        "Priest",
+        "Milkman",
         "Sheriff",
-        "1-Shot Vigilante",
+        "Witch",
         "Doctor",
         "Bodyguard",
-        "Sleepwalker",
-        "Bard",
+        "Deputy",
         "Godfather",
-        "Lynchpin",
-        "Fireproof Mafia",
-        "Arsonist"
+        "Bootlegger",
+        "Lynchpin"
     ]
 }

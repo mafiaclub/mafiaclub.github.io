@@ -1,19 +1,15 @@
 {
     "version": "open1",
     "name": "Open1",
-    "description": "An open setup for 12",
+    "description": "An open setup for 8",
     "roles": [
+        "Townie",
+        "1-Shot Bulletproof Townie",
         "Tracker",
-        "Fireproof Townie",
-        "Sheriff",
         "1-Shot Vigilante",
-        "Doctor",
-        "Bodyguard",
-        "Sleepwalker",
-        "Bard",
-        "Godfather",
-        "Lynchpin",
-        "Fireproof Mafia",
+        "Jailor",
+        "Hitman",
+        "Hooker",
         "Arsonist"
     ]
 }
