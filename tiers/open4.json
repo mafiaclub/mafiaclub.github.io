@@ -3,10 +3,9 @@
     "name": "Open1",
     "description": "A terrible complicated setup for 13",
     "roles": [
-        "Tracker",
-        "Jailer",
+        "Townie",
+        "1-Shot Bulletproof Townie",
         "Sheriff",
-        "Milkman",
         "1-Shot Vigilante",
         "Doctor",
         "Bodyguard",
@@ -14,7 +13,7 @@
         "Watcher",
         "Consiglier v2",
         "Bootlegger",
-        "Serial Killer",
-        "Illusionist",
+        "Mafia",
+        "Serial Killer"
     ]
 }

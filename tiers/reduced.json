@@ -2,6 +2,7 @@
     "version": "reduced",
     "name": "Reduced",
     "description": "Standard set to play with for Fa19.",
+    "notes":"switched over back to standard"
     "roles": [
         "Townie",
         "1-Shot Bulletproof Townie",
