@@ -267,7 +267,11 @@
         "description": "Does not wake with the other members of the Mafia at night. The other Mafia members know there is a Traitor in the game, but not who that player is.",
         "team": "Mafia"
     },
-
+    {
+        "name": "Douser",
+        "description": "Third party sided with the arsonist.  Arsonist is told that the douser is in the game but neither knows who the other is.",
+        "team": "Third Party"
+    },
     {
         "name": "Amnesiac",
         "description": "Must take on the role of a dead player and fufill that players win condition in order to win.",
@@ -425,91 +429,91 @@
         {
         "name": "Mass Claim",
         "description": "Everyone publicly announces their role.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Counter Claim",
         "description": "When a second person claims the same thing as someone else. In normal games there is only one of each role (excluding normal townie/mafia) so when two people claim the same role one must be lying.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Soft Claim",
         "description": "When someone hints about their role, without explicitly stating it.  For example, someone might say that they are \"weak healing\" or \"strong investigative\".",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Hard Claim",
         "description": "When someone announces their exact role to the entire town.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Fake Claim",
         "description": "When someone claims a role incorrectly.  For example, a member of the mafia may fake claim that they are town sided.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Open",
         "description": "A game in which all of the roles in the game are announced at the beginning, but roles are not revealed as people die.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Closed",
         "description": "A game in which no roles are annouced at the begining, and roles are revealed as people die.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Super Closed",
         "description": "A game which may have non standard rules, roles, and win conditions.  Often themed, these games are chaotic and take longer than normal games.  Roles are not announced at the begining, and usually are revealed as people die.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Mod Fail",
         "description": "When the moderator makes a mistake.  May result in everyone going back to sleep while the mistake is corrected.  The prevalence of mod fails shockingly has an inverse correlation to the amount of time till sunrise.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Super Citizen",
         "description": "One person who everyone tells their roles to privately.  This is usually someone who has been confirmed as town, and they will likely organize all townie's actions based on their knowledge.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Town Sided Arsonist",
         "description": "Town sided arsonists are arsonists who decide to play for the towns benifit instead of their own.  They will often douse themselves on the first night, guranteeing that when they light up they will die.  This is not an actuall role, but some people who get arsonist choose to play this way.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Quick Block",
         "description": "Not to be confused with a sudden or swift block.  When players quickly nominate and second the entire block the moment that the mod has finished with morning announcements.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Sudden Block",
         "description": "Not to be confused with a quick or swift block.  When players suddenly nominate and second the entire block, after some time has passed during the day.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Swift Block",
         "description": "Not to be confused with a sudden or quick block.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Saving Role",
         "description": "Any role that can prevent a death from occuring.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Town Sided Killing Role",
         "description": "Any town sided role that can kill.",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Information Role",
         "description": "Any role that can gain information about other players through their night ability",
-        "team": "Definitions" 
+        "team": "Definitions"
     },
         {
         "name": "Confirmable/Can Be Confirmed",
         "description": "Any role that can prove that they are who they say they are.  For example, a mayor might prove their role by convincing the town to tie a vote, so that they are a tie breaker",
-        "team": "Definitions" 
+        "team": "Definitions"
     }
 ]
