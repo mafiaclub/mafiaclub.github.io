@@ -1,7 +1,7 @@
 {
     "version": "5",
-    "name": "Expanded",
-    "description": "New roles. Extensive playtesting recommended.",
+    "name": "Expiremental",
+    "description": "Expirmental roles that seem possibly balanced and may be added eventually.",
     "roles": [
         "Douser"
     ]
