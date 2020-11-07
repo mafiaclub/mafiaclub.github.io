@@ -269,7 +269,7 @@
     },
     {
         "name": "Douser",
-        "description": "Third party sided with the arsonist.  Arsonist is told that the douser is in the game but neither knows who the other is.",
+        "description": "Third party sided with the arsonist.  Arsonist is told that the douser is in the game but does not know who they are. Douser knows the arsonist. Douse one player each night",
         "team": "Third Party"
     },
     {
