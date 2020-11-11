@@ -269,12 +269,12 @@
     },
     {
         "name": "Douser",
-        "description": "Third party sided with the arsonist.  Arsonist is told that the douser is in the game but does not know who they are. Douser knows the arsonist. Douse one player each night",
+        "description": "Third party sided with the arsonist.  Arsonist is told that the douser is in the game but does not know who they are. Douser knows the arsonist. Douse one player each night.  If the arsonist dies the douser gains the ability to light up *once*.",
         "team": "Third Party"
     },
     {
         "name": "Amnesiac",
-        "description": "Must take on the role of a dead player and fufill that players win condition in order to win.",
+        "description": "Must take on the role of a dead player and fufill that players win condition in order to win.  Before claiming a role is one shot bulletproof.",
         "team": "Third Party"
     },
     {
