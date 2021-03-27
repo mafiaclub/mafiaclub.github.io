@@ -64,6 +64,11 @@
         "team": "Town"
     },
     {
+        "name": "Grave Robber",
+        "description": "Learns the roles of players that are killed by the gravedigger",
+        "team": "Town"
+    },
+    {
         "name": "Jailor",
         "description": "Jails one player per night, roleblocking and protecting them for the night. Cannot jail themself.",
         "team": "Town"
