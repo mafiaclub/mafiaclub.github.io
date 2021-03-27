@@ -3,6 +3,11 @@
     "name": "Expiremental",
     "description": "Expirmental roles that seem possibly balanced and may be added eventually.",
     "roles": [
-        "Douser"
+        "Grave Robber",
+        "Bartender",
+        "Coroner",
+        "Executioner",
+        "Backstabber",
+        "Psychic V2"
     ]
 }
