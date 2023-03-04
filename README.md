@@ -7,6 +7,13 @@ The website is a static site hosted on [github pages](https://pages.github.com/)
 - [tier-manifest.json](/tier-manifest.json) lists the tiers that should be displayed on the main page
 - [tiers](/tiers) contains json files for each tier describing the roles in that tier
 
+Stack-wise the site is relatively simple. We use:
+- bootstrap for the UI to make the site look ok
+- popper.js to render the tooltips that show you what the role does
+- jquery to find/replace nodes in the domain
+- custom Javascript implementing our domain logic
+- Everything is tied together in index.html which is just a skeleton that loads data from the json files
+
 ## Handbook
 This section describes common tasks that you might want to do.
 
