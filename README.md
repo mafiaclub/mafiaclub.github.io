@@ -3,9 +3,9 @@ This is the source code for the above website. It hosts role descriptions for th
 
 ## Architecture
 The website is a static site hosted on [github pages](https://pages.github.com/). The master branch is auto-deployed. The site uses [javascript](/index.js) to render json lists into the tabs viewed on the main page. There are two main manifest files and one important folder:
-- [tiers.json](/roles.json) lists all of the roles the site knows about
+- [roles.json](/roles.json) lists all of the roles the site knows about
 - [tier-manifest.json](/tier-manifest.json) lists the tiers that should be displayed on the main page
-- [tiers](/tiers.json) contains json files for each tier describing the roles in that tier
+- [tiers](/tiers) contains json files for each tier describing the roles in that tier
 
 ## Handbook
 This section describes common tasks that you might want to do.
