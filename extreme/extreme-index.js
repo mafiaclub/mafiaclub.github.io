@@ -41,7 +41,7 @@ var popover = function(name, description, team) {
     // before initializing it with the correct data
     var placeholder = tabPlaceholder(tierID);
     $('#tier-tabs').append(placeholder.html);
-    $.getJSON(prefix + '/' + tierFileFor(tierID), function(tier) {
+    $.getJSON(prefix + '/extreme/' + tierFileFor(tierID), function(tier) {
       var roles = tier.roles.flatMap(x => toArray(getRoleData(allRoles, x)));
       $('#' + placeholder.id).replaceWith(tab(tier, active));
       $('#tiers').append(tierList(tier, active));
@@ -56,7 +56,7 @@ var popover = function(name, description, team) {
     });
   };
   
-  $.getJSON(prefix + '/tier-manifest.json', function(tiers) {
+  $.getJSON(prefix + '/extreme-tier-manifest.json', function(tiers) {
     $.getJSON(prefix + '/roles.json', function(roles) {
       // generate all of the tier lists
       $.each(tiers, function(ix, e) {
