@@ -57,7 +57,7 @@
 	},
 	{
 		"name": "Hangman",
-		"description": "While you live, two people get lynched each day and the block is one person larger. If there is a tie for second lynch, there is no second lynch.",
+		"description": "While you live, two people get voted out each day and the block is one person larger. If there is a tie for the second vote, there is no second kill.",
 		"team": "Mafia"
 	},
 	{
@@ -88,12 +88,12 @@
 	},
 	{
 		"name": "Lawyer",
-		"description": "Defend one person each night. If three or more people oppose their lynching the next day, they do not die. Otherwise, you die with them. The other mafia do not know who you are. Do not wake with the Mafia.",
+		"description": "Defend one person each night. If three or more people oppose that person being voted out the next day, they do not die. Otherwise, you die with them. The other mafia do not know who you are. Do not wake with the Mafia.",
 		"team": "Mafia"
 	},
 	{
-		"name": "Lynchpin",
-		"description": "Unlynchable until all of the other Mafia members are dead. Every time you are lynched other than the first night they choose a player to roleblock immediately.",
+		"name": "Escape Artist",
+		"description": "Cannot be voted out until all of the other Mafia members are dead. Every time you are voted out other than the first night they choose a player to roleblock immediately.",
 		"team": "Mafia",
 		"author": "Nancy Sun"
 	},
@@ -289,7 +289,7 @@
 	},
 	{
 		"name": "Golem",
-		"description": "Can only die by fire or lynching. Visit anyone who dies.",
+		"description": "Can only die by fire or vote. Visit anyone who dies.",
 		"team": "Town"
 	},
 	{
