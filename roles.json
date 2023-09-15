@@ -93,7 +93,7 @@
 	},
 	{
 		"name": "Escape Artist",
-		"description": "Cannot be voted out until all of the other Mafia members are dead. Every time you are voted out other than the first night they choose a player to roleblock immediately.",
+		"description": "Survives being voted out unless all the other Mafia members are dead. Every time you are voted out other than the first night they choose a player to roleblock immediately.",
 		"team": "Mafia",
 		"author": "Nancy Sun"
 	},
