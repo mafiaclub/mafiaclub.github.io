@@ -93,7 +93,7 @@
 	},
 	{
 		"name": "Escape Artist",
-		"description": "Survives being voted out unless all the other Mafia members are dead. Every time the escape artist is voted out, other than the first night, the escapee chooses a player to roleblock immediately.",
+		"description": "Survives being voted out unless all the other Mafia members are dead. Every time the Escape Artist is voted out, other than the first night, the Escapee chooses a player to roleblock immediately.",
 		"team": "Mafia",
 		"author": "Nancy Sun"
 	},
@@ -281,6 +281,11 @@
 		"name": "Fireproof Townie",
 		"description": "Immune to being burned.",
 		"team": "Town"
+	},
+	{
+		"name": "Gaslighter",
+		"description": "You don't know how to read.",
+		"team": "Mafia"
 	},
 	{
 		"name": "General",
