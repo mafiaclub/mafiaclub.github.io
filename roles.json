@@ -165,6 +165,11 @@
 		"team": "Third Party"
 	},
 	{
+		"name": "David",
+		"description": "What does the Godfather do?",
+		"team": "Town"
+	},
+	{
 		"name": "Douser",
 		"description": "Third party sided with the arsonist.  Arsonist is told that the douser is in the game but does not know who they are. Douser knows the arsonist. Douse one player each night.  If the arsonist dies the douser gains the ability to light up *once*.",
 		"team": "Third Party",
@@ -285,7 +290,7 @@
 	{
 		"name": "Gaslighter",
 		"description": "You don't know how to read.",
-		"team": "Mafia"
+		"team": "Third Party"
 	},
 	{
 		"name": "General",
