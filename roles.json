@@ -165,11 +165,6 @@
 		"team": "Third Party"
 	},
 	{
-		"name": "David",
-		"description": "What does the Godfather do?",
-		"team": "Town"
-	},
-	{
 		"name": "Douser",
 		"description": "Third party sided with the arsonist.  Arsonist is told that the douser is in the game but does not know who they are. Douser knows the arsonist. Douse one player each night.  If the arsonist dies the douser gains the ability to light up *once*.",
 		"team": "Third Party",
@@ -186,6 +181,12 @@
 		"description": "Poison a player each night.  They will die during the day.",
 		"team": "Third Party",
 		"author": "Ben"
+	},
+	{
+		"name": "Gaslighter",
+		"description": "You don't know how to read, never did.",
+		"team": "Fourth Party",
+		"author": "Will"
 	},
 	{
 		"name": "Jester",
@@ -263,6 +264,12 @@
 		"team": "Town"
 	},
 	{
+		"name": "David",
+		"description": "What does the Godfather do?",
+		"team": "Town",
+		"author": "Will"
+	},
+	{
 		"name": "Deputy",
 		"description": "Take over as Sheriff the night after the Sheriff dies.",
 		"team": "Town"
@@ -286,11 +293,6 @@
 		"name": "Fireproof Townie",
 		"description": "Immune to being burned.",
 		"team": "Town"
-	},
-	{
-		"name": "Gaslighter",
-		"description": "You don't know how to read.",
-		"team": "Third Party"
 	},
 	{
 		"name": "General",
