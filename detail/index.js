@@ -11,6 +11,7 @@ $.getJSON(prefix + '/tiers/' + tierID + '.json', function(tier) {
     var townRoles = [];
     var mafiaRoles = [];
     var thirdPartyRoles = [];
+    var fourthPartyRoles = [];
     $.each(roles, function(ix, e) {
       console.log(ix, e);
       switch (e.team) {
@@ -22,6 +23,9 @@ $.getJSON(prefix + '/tiers/' + tierID + '.json', function(tier) {
           break;
         case "Third Party":
           thirdPartyRoles.push(e);
+          break;
+        case "Fourth Party":
+          fourthPartyRoles.push(e);
           break;
         default:
           throw "Invalid team!";
@@ -59,6 +63,10 @@ $.getJSON(prefix + '/tiers/' + tierID + '.json', function(tier) {
       item: 'single-col-item',
       valueNames: ['name', 'description']
     }, thirdPartyRoles);
+    var fourthPartyRoleList = new List('fourth-party-role-list', {
+      item: 'single-col-item',
+      valueNames: ['name', 'description']
+    }, fourthPartyRoles);
 
   });
 });
