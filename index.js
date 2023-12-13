@@ -1,5 +1,5 @@
 var popover = function(name, description, team) {
-  return '<button type="button" class="btn btn-default" href="#" data-content="'
+  return '<button type="button" class="btn btn-default '+team.split(' ')[0]+'" href="#" data-content="'
     + quoteattr(description)
     + '" rel="popover" data-placement="top" data-original-title="'
     + quoteattr(name + ' - ' + team)
