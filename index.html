@@ -5,12 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css">
 		<style>
 	    .Town {
-	        background-image: linear-gradient(#080, #000);
+	        background-image: linear-gradient(#080, #000 50%);
 	    }
 			.Mafia {
 	        background-image: linear-gradient(#800, #000 50%);
@@ -21,14 +20,21 @@
 			.Fourth {
 	        background-image: linear-gradient(#808, #000 50%);
 	    }
+			footer {
+			background: #000;
+			width: 100%;
+			bottom: 0;
+			position: fixed;
+			padding: 5px;
+		}
 	</style>
   </head>
   <body>
   <div class="container">
     <h1>Cornell Mafia Club</h1>
-	<div class="text-warning" >
-    <!-- warnings or announcements go here -->
-    <!-- <p>Mafia is back to in person! See you There</p> -->
+	<div class="text-warning">
+    <!-- warnings/announcements go here -->
+    <!-- <p>Gaslighter was always there</p> -->
 
 	</div>
   <p>
@@ -36,13 +42,12 @@
     large variety of exciting roles which can be found below.
 	</p>
 	<p>
-	   If you want to know how we play, <a href="/rules/">these are the rules</a>.
+	   If you want to know how we play, <a href="/rules">these are the rules</a>.
   </p>
 	  <p><span style="background:#007;border-radius:20px;padding:5px;margin-right:5px">NEW</span><a href="/mod">Moderation UI (test)</a></p>
   <p>
-    We meet every Friday at 9pm eastern time.
+    We meet Fridays at 9pm ET. Free snacks!
   </p>
-
     <!-- Initialized by index.js from json data -->
     <ul id="tier-tabs" class="nav nav-tabs">
     </ul>
@@ -53,16 +58,15 @@
     <div id="cal" class="text-warning">
 	<p>Friday 9pm: Mafia!</p>
 	<p>2/30/24: Gaslighting!</p>
-    </div>
-
+    </div></div>
+	<footer>This organization is a registered student organization of Cornell University.</footer>
     <script type="text/javascript" src="/main.js"></script>
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-
-   <script type="text/javascript" src="/index.js"></script>
-   <script type="text/javascript" src="/collapse.js"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+	<script type="text/javascript" src="/index.js"></script>
+	<script type="text/javascript" src="/collapse.js"></script>
   </body>
 </html>
