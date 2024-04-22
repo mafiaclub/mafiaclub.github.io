@@ -42,7 +42,7 @@
 	},
 	{
 		"name": "Devil on My Shoulder",
-		"description": "Visits one person each night to make them vote for the same person as you, without them knowing, during the following day.",
+		"description": "Visit one person each night to make them vote for the same person as you, without them knowing, during the following day.",
 		"team": "Mafia",
 		"author": "Wubbles"
 	},
@@ -375,7 +375,7 @@
 	},
 	{
 		"name": "Librarian",
-		"description": "Up to two people sitting next to you are protected during the night. Is told if anyone has been doused each night.",
+		"description": "Up to two people sitting next to you are protected during the night. You are notified if anyone has been doused that night.",
 		"team": "Town",
 		"author": "Wibbs"
 	},
@@ -466,13 +466,13 @@
 	},
 	{
 		"name": "Revenant",
-		"description": "Can fake their death once per game. Chooses a town-sided role to be revealed as by the mod. They will be resurrected the following day. (The town can still lose while the revenant is faking their death)",
+		"description": "Can fake your death once per game. Choose a town-sided role to be revealed as by the mod. You will be resurrected the following day. (The town can still lose while the revenant is faking their death)",
 		"team": "Town",
 		"author": "Werbs"
 	},
 	{
 		"name": "Revisionist",
-		"description": "Chooses one person each night. If that person dies next round they will be the ONLY death that round.",
+		"description": "Choose one person each night. If that person dies next round they will be the ONLY death that round.",
 		"team": "Town",
 		"author": "Wulbs"
 	},
