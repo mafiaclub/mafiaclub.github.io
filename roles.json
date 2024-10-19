@@ -26,11 +26,6 @@
 	},
 	{
 		"name": "Consigliere",
-		"description": "Check one person per night, seeing if they are a plain Townie (thumbs down) or a power role (thumbs up).",
-		"team": "Mafia"
-	},
-	{
-		"name": "Consigliere v2",
 		"description": "Learn the role of one player each night.",
 		"team": "Mafia"
 	},
@@ -205,12 +200,6 @@
 		"author": "Ben"
 	},
 	{
-		"name": "Herbalist V2",
-		"description": "Poison a player each night.  They will die during the day.",
-		"team": "Third Party",
-		"author": "Ben"
-	},
-	{
 		"name": "Matchmaker",
 		"description": "Infinite bulletproof. Each night, visit two players to draw a match between them. If a matched player is shot, everyone matched with them is shot too. Does not go through bulletproof.",
 		"team": "Third Party"
@@ -229,6 +218,11 @@
 	},
 	{
 		"name": "Jester",
+		"description": "Win by being voted out in the day.",
+		"team": "Third Party"
+	},
+	{
+		"name": "Infiltrator",
 		"description": "At the start of the game choose a faction to win with.  You will be told who else is in that faction.",
 		"team": "Third Party",
 		"author": "Ben"
@@ -374,6 +368,11 @@
 		"author": "lmn"
 	},
 	{
+		"name": "Insomniac",
+		"description": "1-shot bulletproof. Each night, see the actions others performed on you.",
+		"team": "Town"
+	},
+	{
 		"name": "Hard Claim",
 		"description": "When someone announces their exact role to the entire town.",
 		"team": "Town"
@@ -469,7 +468,7 @@
 		"clarifications": "Does not know the number of third parties in the game."
 	},
 	{
-		"name": "Psychic V2",
+		"name": "Clairvoyant",
 		"description": "Prior to each morning you will be told who has been killed.  You may choose to save one person per game.",
 		"team": "Town",
 		"author": "Ben"
@@ -533,7 +532,7 @@
 		"team": "Town"
 	},
 	{
-		"name": "Sleepwalker V2",
+		"name": "Night Crawler",
 		"description": "Visit one person at random each night. If you are visited by an evil role, learn that role.",
 		"team": "Town"
 	},
