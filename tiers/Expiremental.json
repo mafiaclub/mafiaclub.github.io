@@ -1,0 +1,27 @@
+{
+    "version": "idk",
+    "name": "Experimental",
+    "description": "New roles created by members. Not tested enough for balance.",
+    "roles": [
+    "Cultist",
+    "Devil on My Shoulder",
+    "Gambler",
+    "Traitor+",
+    "Agoraphobe",
+    "Zombie",
+    "Businessman",
+    "Cameraman",
+    "Conspiracy Theorist",
+    "Gossiper",
+    "Librarian",
+    "Revenant",
+    "Revisionist",
+    "Sleuth",
+    "Super Mason",
+    "Trapper",
+    "Town Guesser",
+    "Solo Guesser",
+    "Mafia Guesser",
+    "Matchmaker"
+    ]
+}

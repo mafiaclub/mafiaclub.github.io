@@ -26,11 +26,6 @@
 	},
 	{
 		"name": "Consigliere",
-		"description": "Check one person per night, seeing if they are a plain Townie (thumbs down) or a power role (thumbs up).",
-		"team": "Mafia"
-	},
-	{
-		"name": "Consigliere v2",
 		"description": "Learn the role of one player each night.",
 		"team": "Mafia"
 	},
@@ -45,6 +40,12 @@
 		"description": "Visit one person each night to make them vote for the same person as you, without them knowing, during the following day.",
 		"team": "Mafia",
 		"author": "Wubbles"
+	},
+	{
+		"name": "Escape Artist",
+		"description": "Survives being voted out unless all the other Mafia members are dead. Every time the Escape Artist is voted out, other than the first night, the Escapee chooses a player to roleblock immediately.",
+		"team": "Mafia",
+		"author": "Nancy Sun"
 	},
 	{
 		"name": "Fireproof Mafia",
@@ -70,7 +71,7 @@
 	},
 	{
 		"name": "Godfather",
-		"description": "Appears innocent when checked by the Sheriff.",
+		"description": "Appears innocent to Sheriff and Seer.",
 		"team": "Mafia"
 	},
 	{
@@ -85,7 +86,7 @@
 	},
 	{
 		"name": "Hitman",
-		"description": "Unnoticeable by trackers and watchers.",
+		"description": "Unnoticeable by Tracker and Watcher.",
 		"team": "Mafia"
 	},
 	{
@@ -118,12 +119,6 @@
 		"name": "Lawyer",
 		"description": "Defend one person each night. If three or more people oppose that person being voted out the next day, they do not die. Otherwise, you die with them. The other mafia do not know who you are. Do not wake with the Mafia.",
 		"team": "Mafia"
-	},
-	{
-		"name": "Escape Artist",
-		"description": "Survives being voted out unless all the other Mafia members are dead. Every time the Escape Artist is voted out, other than the first night, the Escapee chooses a player to roleblock immediately.",
-		"team": "Mafia",
-		"author": "Nancy Sun"
 	},
 	{
 		"name": "Madman",
@@ -173,13 +168,23 @@
 		"team": "Mafia"
 	},
 	{
+		"name": "Traitor+",
+		"description": "1-shot bulletproof traitor. When 3 players remain, you get 1 shot.",
+		"team": "Mafia"
+	},
+	{
 		"name": "Admirer",
-		"description": "Takes over for the Serial Killer the night after the Serial Killer dies. Wins with the Serial Killer. The Admirer is shown who the Serial Killer is, but the Serial Killer does not know who the Admirer is.",
+		"description": "Takes over for the Serial Killer the night after they die. Wins with the Serial Killer. The Admirer is shown who the Serial Killer is, but the Serial Killer does not know who the Admirer is.",
+		"team": "Third Party"
+	},
+	{
+		"name": "Agoraphobe",
+		"description": "Infinite bulletproof. Visit one player each night. That player dies if no one else visits them.",
 		"team": "Third Party"
 	},
 	{
 		"name": "Amnesiac",
-		"description": "Must take on the role of a dead player and fufill that players win condition in order to win.  Before claiming a role is one shot bulletproof.",
+		"description": "Must take on the role of a dead player and fufill that player's win condition in order to win.  Before claiming a role is one shot bulletproof.",
 		"team": "Third Party"
 	},
 	{
@@ -210,10 +215,9 @@
 		"author": "Ben"
 	},
 	{
-		"name": "Herbalist V2",
-		"description": "Poison a player each night.  They will die during the day.",
-		"team": "Third Party",
-		"author": "Ben"
+		"name": "Matchmaker",
+		"description": "Infinite bulletproof. Each night, visit two players to draw a match between them. If a matched player is shot, everyone matched with them is shot too. Does not go through bulletproof.",
+		"team": "Third Party"
 	},
 	{
 		"name": "Monk",
@@ -241,6 +245,11 @@
 	},
 	{
 		"name": "Jester",
+		"description": "Win by being voted out in the day.",
+		"team": "Third Party"
+	},
+	{
+		"name": "Infiltrator",
 		"description": "At the start of the game choose a faction to win with.  You will be told who else is in that faction.",
 		"team": "Third Party",
 		"author": "Ben"
@@ -329,7 +338,7 @@
 	},
 	{
 		"name": "Counter Claim",
-		"description": "When a second person claims the same thing as someone else. In normal games there is only one of each role (excluding normal townie/mafia) so when two people claim the same role one must be lying.",
+		"description": "When a second person claims the same thing as someone else. In normal games there is only one of each role (except mason) so when two people claim the same role one must be lying.",
 		"team": "Town"
 	},
 	{
@@ -389,6 +398,11 @@
 		"description": "Learns the roles of players that are killed by the gravedigger",
 		"team": "Town",
 		"author": "lmn"
+	},
+	{
+		"name": "Insomniac",
+		"description": "1-shot bulletproof. Each night, see the actions others performed on you.",
+		"team": "Town"
 	},
 	{
 		"name": "Hard Claim",
@@ -501,7 +515,7 @@
 		"clarifications": "Does not know the number of third parties in the game."
 	},
 	{
-		"name": "Psychic V2",
+		"name": "Clairvoyant",
 		"description": "Prior to each morning you will be told who has been killed.  You may choose to save one person per game.",
 		"team": "Town",
 		"author": "Ben"
@@ -556,7 +570,7 @@
 	},
 	{
 		"name": "Sheriff",
-		"description": "Check one person each night. Thumbs up means that player is guilty (e.g. a member of the Mafia) and thumbs down means that player is innocent.",
+		"description": "Check one person each night. Thumbs up means that player is guilty (not town) and thumbs down means that player is innocent.",
 		"team": "Town"
 	},
 	{
@@ -566,7 +580,7 @@
 	},
 	{
 		"name": "Shrink",
-		"description": "Each night visit a player, if that player is third party convert them to town (and they loose whatever abilities they have).",
+		"description": "Each night visit a player, if that player is third party convert them to town (and they lose whatever abilities they have).",
 		"team": "Town"
 	},
 	{
@@ -575,7 +589,7 @@
 		"team": "Town"
 	},
 	{
-		"name": "Sleepwalker V2",
+		"name": "Night Crawler",
 		"description": "Visit one person at random each night. If you are visited by an evil role, learn that role.",
 		"team": "Town"
 	},
@@ -606,6 +620,11 @@
 		"team": "Town"
 	},
 	{
+		"name": "Super Mason",
+		"description": "While you are alive, the other Masons cannot die.",
+		"team": "Town"
+	},
+	{
 		"name": "Swift Block",
 		"description": "Not to be confused with a sudden or quick block.",
 		"team": "Town"
@@ -617,7 +636,7 @@
 	},
 	{
 		"name": "Town Sided Arsonist",
-		"description": "Town sided arsonists are arsonists who decide to play for the towns benifit instead of their own.  They will often douse themselves on the first night, guranteeing that when they light up they will die.  This is not an actuall role, but some people who get arsonist choose to play this way.",
+		"description": "Town sided arsonists are arsonists who decide to play for the towns benifit instead of their own.  They will often douse themselves on the first night, guranteeing that when they light up they will die.  This is not an actual role, but some people who get arsonist choose to play this way.",
 		"team": "Town"
 	},
 	{
