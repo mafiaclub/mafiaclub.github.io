@@ -58,6 +58,11 @@
 		"author": "Nancy Sun"
 	},
 	{
+		"name": "Frontman",
+		"description": "Unwatchable. Appear innocent until you perform a kill.",
+		"team": "Mafia"
+	},
+	{
 		"name": "Gambler",
 		"description": "Can shoot a fellow mafia member to gain bulletproof, appear innocent, or become unwatchable untrackable. (This kill counts as the Mafia’s kill that night)",
 		"team": "Mafia",
@@ -105,6 +110,11 @@
 		"team": "Mafia"
 	},
 	{
+		"name": "King",
+		"description": "Once per game can silence everyone for the following day. 1-shot bulletproof",
+		"team": "Mafia"
+	},
+	{
 		"name": "Lawyer",
 		"description": "Defend one person each night. If three or more people oppose that person being voted out the next day, they do not die. Otherwise, you die with them. The other mafia do not know who you are. Do not wake with the Mafia.",
 		"team": "Mafia"
@@ -134,6 +144,11 @@
 	{
 		"name": "Siren",
 		"description": "Choose someone each night. If they visit someone, they instead visit you. 1-shot bulletproof.",
+		"team": "Mafia"
+	},
+	{
+		"name": "Sniper",
+		"description": "If you perform the kill, the person you targetted will be shot the following night.",
 		"team": "Mafia"
 	},
 	{
@@ -201,6 +216,12 @@
 		"author": "Ben"
 	},
 	{
+		"name": "Monk",
+		"description": "Role-block everyone who visits you.",
+		"team": "Third Party",
+		"author": "Wiitch"
+	},
+	{
 		"name": "Zombie",
 		"description": "Infect one person each night to convert them into a fellow zombie. That player is notified that they have become a zombie. They are no longer their previous role, and they now win with the original zombie. All zombified players die if the original zombie dies. (Zombification can be blocked by saving roles or role blocks, and can be cured by the witch)",
 		"team": "Third Party",
@@ -211,6 +232,12 @@
 		"description": "You don't know how to read, never did.",
 		"team": "Fourth Party",
 		"author": "Lemon"
+	},
+	{
+		"name": "God",
+		"description": "Can kill the mod at any time and replace them as the new mod.",
+		"team": "Fourth Party",
+		"author": "Wumble"
 	},
 	{
 		"name": "Jester",
@@ -262,8 +289,8 @@
 	},
 	{
 		"name": "Businessman",
-		"description": "Permanently framed, but can motion for a reblock while they are on the block. Must be given at least 5 minutes of time on the block, unless they cut their time short. (This role can be Town-sided, Mafia-sided, or Third Party; the player does not choose)",
-		"team": "Town",
+		"description": "Permanently framed, but can motion for a reblock while they are on the block. Must be given at least 5 minutes of time on the block, unless they cut their time short. (This role can be Town-sided, Mafia-sided, or Third Party; the player chooses on the first night)",
+		"team": "Third Party",
 		"author": "Wubble"
 	},
 	{
@@ -327,6 +354,11 @@
 		"team": "Town"
 	},
 	{
+		"name": "Electrician",
+		"description": "The first person of the game to visit you dies instantly.",
+		"team": "Town"
+	},
+	{
 		"name": "Fake Claim",
 		"description": "When someone claims a role incorrectly.  For example, a member of the mafia may fake claim that they are town sided.",
 		"team": "Town"
@@ -364,6 +396,11 @@
 		"team": "Town"
 	},
 	{
+		"name": "Hunter",
+		"description": "1-shot bulletproof, untrackable, 1-shot vigilante. Can choose one person per game to give 1-shot bulletproof to. ",
+		"team": "Town"
+	},
+	{
 		"name": "Information Role",
 		"description": "Any role that can gain information about other players through their night ability",
 		"team": "Town"
@@ -390,6 +427,11 @@
 		"team": "Town"
 	},
 	{
+		"name": "Mathematician",
+		"description": "Learn how many people were visited each night",
+		"team": "Town"
+	},
+	{
 		"name": "Mayor",
 		"description": "Break tie votes in favor of this player's vote",
 		"team": "Town"
@@ -412,6 +454,11 @@
 	{
 		"name": "Mod Fail",
 		"description": "When the moderator makes a mistake.  May result in everyone going back to sleep while the mistake is corrected.  The prevalence of mod fails shockingly has an inverse correlation to the amount of time till sunrise.",
+		"team": "Town"
+	},
+	{
+		"name": "Neighbor",
+		"description": "Learn if either of the two people sitting next to you wake up at night (you are given a thumbs up or thumbs down). Can visit either of them to learn if THEY visited anyone that night",
 		"team": "Town"
 	},
 	{
@@ -460,6 +507,11 @@
 		"author": "Ben"
 	},
 	{
+		"name": "Queen",
+		"description": "Knows if there is a King or a Jester in the game. Cannot be silenced by the King. 1-shot bulletproof",
+		"team": "Town"
+	},
+	{
 		"name": "Quick Block",
 		"description": "Not to be confused with a sudden or swift block.  When players quickly nominate and second the entire block the moment that the mod has finished with morning announcements.",
 		"team": "Town"
@@ -505,6 +557,11 @@
 	{
 		"name": "Sheriff",
 		"description": "Check one person each night. Thumbs up means that player is guilty (e.g. a member of the Mafia) and thumbs down means that player is innocent.",
+		"team": "Town"
+	},
+	{
+		"name": "Shopkeeper",
+		"description": "Anyone who visits you during the night is protected",
 		"team": "Town"
 	},
 	{
