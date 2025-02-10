@@ -245,7 +245,7 @@
 	},
 	{
 		"name": "Jester",
-		"description": "Win by being voted out in the day.",
+		"description": "Win if voted out. If voted out, get 1 unblockable revenge kill that night.",
 		"team": "Third Party"
 	},
 	{
@@ -652,6 +652,11 @@
 	{
 		"name": "Tracker",
 		"description": "Tracks one player each night, seeing who they visit.",
+		"team": "Town"
+	},
+	{
+		"name": "Trapper",
+		"description": "You get 1 trap. Each night, either set the trap on a player or save it for later. If someone other than you visits the trapped player, the trap goes off, killing everyone other than you who visited that player. If the trap goes off, you cannot use it again.",
 		"team": "Town"
 	},
 	{
