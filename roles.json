@@ -179,7 +179,7 @@
 	},
 	{
 		"name": "Agoraphobe",
-		"description": "Infinite bulletproof. Visit one player each night. That player dies if no one else visits them.",
+		"description": "Infinite bulletproof. Visit one player each night. That player dies if no one else visits them. Win with the Waterboarder and know if they are in the game.",
 		"team": "Third Party"
 	},
 	{
@@ -216,18 +216,22 @@
 	},
 	{
 		"name": "Matchmaker",
-		"description": "Infinite bulletproof. Each night, visit two players to draw a match between them. If a matched player is shot, everyone matched with them is shot too. Does not go through bulletproof.",
+		"description": "Infinite bulletproof. Each night, visit two players to match them. If a matched player is shot, everyone matched with them is shot too. Does not go through bulletproof. Can shoot 1 person per game.",
 		"team": "Third Party"
 	},
 	{
 		"name": "Monk",
-		"description": "Role-block everyone who visits you.",
-		"team": "Third Party",
-		"author": "Wiitch"
+		"description": "Reflect all visits to you (including kills). Win with any side if all killing roles die.",
+		"team": "Third Party"
+	},
+	{
+		"name": "Waterboarder",
+		"description": "Each night, roleblock a player and see their role, and kill another. Win with the Agoraphobe and know if they are in the game.",
+		"team": "Third Party"
 	},
 	{
 		"name": "Zombie",
-		"description": "Infect one person each night to convert them into a fellow zombie. That player is notified that they have become a zombie. They are no longer their previous role, and they now win with the original zombie. All zombified players die if the original zombie dies. (Zombification can be blocked by saving roles or role blocks, and can be cured by the witch)",
+		"description": "1-shot bulletproof. Infect one person each night to convert them into a fellow zombie. That player is notified that they have become a zombie. They are no longer their previous role, and they now win with the original zombie. All zombified players die if the original zombie dies. (Zombification can be blocked by saving roles or role blocks, and can be cured by the witch)",
 		"team": "Third Party",
 		"author": "Wimblemim"
 	},
@@ -245,7 +249,7 @@
 	},
 	{
 		"name": "Jester",
-		"description": "Win if voted out. If voted out, get 1 unblockable revenge kill that night.",
+		"description": "Win with any side if voted out. If voted out, get 1 unblockable revenge kill that night.",
 		"team": "Third Party"
 	},
 	{
