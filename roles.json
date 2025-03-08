@@ -334,6 +334,11 @@
 		"author": "Wooms"
 	},
 	{
+		"name": "Constable",
+		"description": "Tip your hat to someone else and say \"Constable\" in view of the mod before the block forms. If that person is on the block and survives, they are saved next night.",
+		"team": "Town"
+	},
+	{
 		"name": "Coroner",
 		"description": "Visit a person. If they die find out what role their killer was.",
 		"team": "Town",
@@ -393,7 +398,7 @@
 	},
 	{
 		"name": "Gossiper",
-		"description": "Visit two people each night to learn if they win with the same team.",
+		"description": "Visit two other people each night to learn if they win with the same team.",
 		"team": "Town",
 		"author": "Wilt"
   },
