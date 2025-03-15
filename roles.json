@@ -60,7 +60,7 @@
 	},
 	{
 		"name": "Frontman",
-		"description": "Unwatchable. Appear innocent until you perform a kill.",
+		"description": "Appear innocent until you perform a kill. Your 1st kill is untrackable and unwatchable.",
 		"team": "Mafia"
 	},
 	{
@@ -442,6 +442,11 @@
 	{
 		"name": "Mason",
 		"description": "Wake up the first night to find out who all of the other masons are.",
+		"team": "Town"
+	},
+	{
+		"name": "Mason Avenger",
+		"description": "Wake with the Masons. Each time a Mason dies, you can kill once at night.",
 		"team": "Town"
 	},
 	{
