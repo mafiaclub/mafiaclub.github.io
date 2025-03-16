@@ -3,38 +3,81 @@
   <head>
     <meta charset="utf-8">
     <script>
-      player=`<label>Player: </label><input name="name" onblur="roster()"><br><label>Role: </label><input name="role"><br><label>Dead?</label><input type="checkbox" onclick="if (this.checked) {this.parentElement.style.opacity=0.5} else {this.parentElement.style.opacity=''}; roster();"><br><label>Nominations (2=on block):</label><input type="number" min="0" max="2"><br><label>Ability uses: </label><input type="number"><br><label>#Bulletproof: </label><input type="number"><br><label>Info: </label><input><a style="color:#f00;font-size:unset" onclick="this.parentElement.remove()">X</a>`
-      function visit(p,r) {
-        return(`<label>Player: </label><input value="${p}" list="live"><br><label>Role: </label><input value="${r}"><br><label>Visit: </label><input list="live"><br><label>Result: </label><input><a style="color:#f00;font-size:unset" onclick="this.parentElement.remove()">X</a>`)
-      }
-      function addPlayer() {
-          let p=document.createElement('div');
-          p.innerHTML=player;
-          p.className='entry';
-          document.getElementById('ppl').appendChild(p);
-      }
-      function roster() {
-          let d=document.getElementById('live');
-          d.innerHTML='';
-          for (let _ of document.getElementsByName('name')) {
-              if (_.parentElement.style.opacity=='') {
-                  d.innerHTML+=`<option value="${_.value}"></option>`
-              }
-          }
-      }
-      function act(p,r) {
-          let a=document.createElement('div');
-          a.innerHTML=visit(p,r);
-          a.className='entry';
-          document.getElementById('do').appendChild(a);
-      }
-      function actAll() {
-          for (let i = 0; i < document.getElementsByName('name').length; i++) {
-              if (document.getElementsByName('name')[i].parentElement.style.opacity=='') {
-                  act(document.getElementsByName('name')[i].value,document.getElementsByName('role')[i].value)
-              }
-          }
-      }
+        function addPlayer(n,r) {
+            let p=document.createElement('div');
+            p.innerHTML=`<label>Player: </label><input name="name" onblur="roster()" value="${n||''}"><br><label>Role: </label><input name="role" value="${r||''}"><br><label>Dead?</label><input type="checkbox" onclick="if (this.checked) {this.parentElement.style.opacity=0.5} else {this.parentElement.style.opacity=''}; roster();"><br><label>Nominations (2=on block):</label><input type="number" min="0" max="2"><br><label>Ability uses: </label><input type="number"><br><label>#Bulletproof: </label><input type="number"><br><label>Info: </label><input><a style="color:#f00;font-size:unset" onclick="this.parentElement.remove()">X</a>`;
+            p.className='entry';
+            document.getElementById('ppl').appendChild(p);
+        }
+        function roster() {
+            let d=document.getElementById('live');
+            d.innerHTML='';
+            for (let _ of document.getElementsByName('name')) {
+                if (_.parentElement.style.opacity=='') {
+                    d.innerHTML+=`<option value="${_.value}"></option>`
+                }
+            }
+        }
+        function act(p,r) {
+            let a=document.createElement('div');
+            a.innerHTML=visit(p,r);
+            a.className='entry';
+            document.getElementById('do').appendChild(a);
+            }
+        function actAll() {
+            for (let i = 0; i < document.getElementsByName('name').length; i++) {
+                if (document.getElementsByName('name')[i].parentElement.style.opacity=='') {
+                    act(document.getElementsByName('name')[i].value,document.getElementsByName('role')[i].value)
+                }
+            }
+        }
+        function assignRoles() {
+            let m=document.getElementById('m').value;
+            let n=document.getElementById('n').value;
+            let t=document.getElementById('t').value;
+            let r = (m+(m&&n?',':'')+n+(n&&t?',':'')+t).split(',').sort(()=>(Math.random()-0.5));
+            let p = document.getElementById('p').value.split(',');
+            if (p.length>r.length) {
+                alert('More players than roles!')
+            } else {
+                for (let i = 0; i < p.length; i++) {
+                    addPlayer(p[i],r[i])
+                }
+            }
+        }
+        function getTier(tier) {
+            window.pool={}
+            let t=new XMLHttpRequest();
+            t.open('GET',`https://raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master/tiers/${tier}.json`);
+            t.onreadystatechange = () => {
+                if (t.readyState==XMLHttpRequest.DONE) {
+                    tier=JSON.parse(t.responseText)
+                }
+                let r=new XMLHttpRequest();
+                r.open('GET','https://raw.githubusercontent.com/mafiaclub/mafiaclub.github.io/master/roles.json');
+                r.onreadystatechange = () => {
+                    if (r.readyState==XMLHttpRequest.DONE) {
+                        roles=JSON.parse(r.responseText);
+                        pool.m=roles.filter(x=>x.team=="Mafia"&&tier.roles.includes(x.name));
+                        pool.t=roles.filter(x=>x.team=="Town"&&tier.roles.includes(x.name));
+                        pool.n=roles.filter(x=>x.team=="Third Party"&&tier.roles.includes(x.name))
+                    }
+                }
+                r.send();
+            }
+            document.getElementById('load').disabled=true;
+            t.send();
+        }
+        function getRoles() {
+            for (let s of ['m','n','t']) {
+                let i=document.getElementById(s);
+                let N=parseInt(document.getElementById(s.toUpperCase()).value);
+                let a=pool[s];
+                for (let j = 0; j < N; j++) {
+                    i.value+=(i.value?',':'')+a[Math.floor(Math.random()*a.length)].name;
+                }
+            }
+        }
     </script>
     <style>
         .entry {
@@ -55,13 +98,18 @@
             padding:5px;
             margin:5px;
         }
+        .popup {
+            color: #aaf;
+            text-align:center;
+        }
         </style>
   </head>
-  <body style="font-family: sans-serif;background:#000;color:#fff;">
+  <body style="font-family: sans-serif;background:#000;color:#fff;" onbeforeunload="return(1)">
     <div style="width: unset" class="container">
       <h1>General Info</h1>
       <div contenteditable="" style="background:#444;padding:10px"></div>
-      <a style="color: #aaf" onclick="document.getElementsByTagName('dialog')[0].showModal()">Show text to a player</a>
+      <a style="color: #aaf" onclick="document.getElementsByTagName('dialog')[0].showModal()">Show text to a player</a><br>
+    <a style="color: #aaf" onclick="document.getElementsByTagName('dialog')[1].showModal()">Generate game</a>
     </div>
     <div style="display:inline-block" class="container">
       <h1>Players</h1>
@@ -81,9 +129,33 @@
     </div>
   <datalist id="live"></datalist>
     <dialog style="width:100%;height:100%;background:#000;color:#fff">
-  <h1 style="color: #aaf;text-align: center">INFO</h1>
-  <h3 style="text-align: center">Type below, Esc to close</h3>
+<input type="button" value="Close" onclick="document.getElementsByTagName('dialog')[0].close()"><h1 class="popup">INFO</h1>
       <div contenteditable="" style="border:5px #aaf solid;padding:10px"></div>
+    </dialog>
+      <dialog style="width:100%;height:100%;background:#000;color:#fff">
+  <input type="button" value="Close" onclick="document.getElementsByTagName('dialog')[1].close()">
+          <h1 class="popup">GET RANDOM ROLES</h1>
+  <label>Tier:</label>
+          <select id="tier" onchange="document.getElementById('load').disabled=false;">
+              <option value="basic">Basic</option>
+              <option value="standard">Standard</option>
+              <option value="plus">Standard+</option>
+              <option value="all">Deluxe</option>
+          </select>
+          <label># Mafia:</label><input type="number" min="0" max="20" value="1" id="M" style="background:#800;color:#fff">
+          <label># 3rd Party:</label><input type="number" min="0" max="20" value="0" id="N" style="background:#008;color:#fff">
+          <label># Town:</label><input type="number" min="0" max="20" value="4" id="T" style="background:#080;color:#fff">
+          <button id="load" onclick="getTier(document.getElementById('tier').value);">Load Tier</button>
+          <button onclick="getRoles();">Get Roles</button>
+          <br>
+          <h3>Roles:</h3>
+          <div><label>Mafia Roles:</label><input style="background:#800;color:#fff;padding:8px;width:70%" id="m"><br><label>3rd Party Roles:</label><input style="background:#008;color:#fff;padding:8px;width:70%" id="n"><br><label>Town Roles:</label><input style="background:#080;color:#fff;padding:8px;width:70%" id="t"></div>
+          <br><button onclick="if(confirm('Sure?')){document.getElementById('m').value='';document.getElementById('n').value='';document.getElementById('t').value=''}">Clear</button>
+          <p>Pick a tier and tap Load Tier to make the role pool. Then tap Get Roles to add random roles from the pool to the area above. If you want to choose your own roles for random assignment below, type them with commas in between (e.g. Sage,Bard,Seer…). <b style="color:#ff0">If you don't hit Load Tier, the roles will not be loaded!</b></p>
+          <p style="color:#bbb;padding:0 50px">Note: Random roles may not be balanced and may add duplicates or "lonely" roles like one Mason, Deputy without Sheriff, etc. Edit them as needed.</p>
+          <h1 class="popup">RANDOMLY ASSIGN ROLES</h1>
+          <h3>Players:</h3><input style="padding:8px;width:95%" id="p">
+          <p>Type a list of players with commas in between. Then hit Assign. If there are more players than roles, some roles will be unused. You cannot add more players than roles.</p><input type="button" value="Assign" onclick="assignRoles()">
     </dialog>
   </body>
 </html>
