@@ -18,6 +18,9 @@
                 }
             }
         }
+        function visit(p,r) {
+            return(`<label>Player: </label><input value="${p}" list="live"><br><label>Role: </label><input value="${r}"><br><label>Visit: </label><input list="live"><br><label>Result: </label><input><a style="color:#f00;font-size:unset" onclick="this.parentElement.remove()">X</a>`)
+        }
         function act(p,r) {
             let a=document.createElement('div');
             a.innerHTML=visit(p,r);
