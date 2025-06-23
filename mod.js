@@ -19,7 +19,7 @@ function act(p,r) {
     a.innerHTML=visit(p,r);
     a.className='entry';
     document.getElementById('do').appendChild(a);
-    }
+}
 function actAll() {
     for (let i = 0; i < document.getElementsByName('name').length; i++) {
         if (document.getElementsByName('name')[i].parentElement.style.opacity=='') {

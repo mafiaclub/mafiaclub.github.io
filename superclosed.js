@@ -2,7 +2,7 @@ init=()=>{
     main=document.getElementsByTagName('main')[0];
     currentRole=null;
     let l=document.getElementById('load');
-    try {showOpenFilePicker;l.addEventListener('click',()=>showOpenFilePicker().then((handle)=>handle[0].getFile().then(read)))}
+    try {showOpenFilePicker;l.addEventListener('click',()=>showOpenFilePicker({types:[{description: "Mafia games",accept: {"text/*": [".txt"]}}]}).then((handle)=>handle[0].getFile().then(read)))}
     catch {
         let i=document.createElement('input');
         i.setAttribute('type','file');
@@ -61,16 +61,16 @@ addPart=(parentRole,tagName,content,className)=>{
 };
 addName=(p)=>addPart(p,'h1','Name');
 addSide=(p)=>addPart(p,'h2','Side');
-addLore=(p)=>addPart(p,'p','Lore','flavor');
-addDesc=(p)=>addPart(p,'p','Ability');
+addLore=(p)=>addPart(p,'h4','Lore','flavor');
+addDesc=(p)=>addPart(p,'h4','Ability');
 addBr=(p)=>{
     let t=document.createElement('br');
     t.addEventListener('dblclick',(e)=>e.srcElement.remove());
     (p||(p=roleElem(),main.appendChild(p),setCurr(p),p)).appendChild(t);
 };
-addBad=(p)=>addPart(addPart(p,'p','Attribute','bad attribute'),'p','Description','bad');
-addGood=(p)=>addPart(addPart(p,'p','Attribute','good attribute'),'p','Description','good');
-addNeutral=(p)=>addPart(addPart(p,'p','Attribute','neutral attribute'),'p','Description','neutral');
+addBad=(p)=>addPart(addPart(p,'h4','Attribute','bad attribute'),'h4','Description','bad');
+addGood=(p)=>addPart(addPart(p,'h4','Attribute','good attribute'),'h4','Description','good');
+addNeutral=(p)=>addPart(addPart(p,'h4','Attribute','neutral attribute'),'h4','Description','neutral');
 addRole=(copySrc)=>{
     let r=addBlankRole();
     if (copySrc) {
@@ -124,7 +124,7 @@ setColors=(a,t,b,g,n)=>{
 saveGame=()=>{
     let a=document.createElement('a');
     a.href=URL.createObjectURL(new Blob([main.innerHTML],{type:"text/csv"}));
-    a.download=main.children[0].children[0].innerText+'_mafia.txt';
+    a.download=(main.children[0]?main.children[0].children[0]?main.children[0].children[0].innerText+'_':main.children[0].innerText+'_':'')+'Mafia.txt';
     a.style.display='none';
     document.body.appendChild(a);
     a.click();
@@ -151,7 +151,7 @@ read=(file)=>{
     } else {alert('Text files only!')}
 };
 save=()=>{
-    if (localStorage.getItem('consent')) {
+    if (!localStorage.getItem('consent')) {
         return 1;
     }
     let c=getColors().map(eval);

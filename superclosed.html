@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <script src="superclosed.js"></script>
-        <style name="superclosed style">
+        <style>
             section {
                 margin-bottom:100%;
             }
             h1 {
                 font-family:cursive;
             }
-            p,li {
+            h4,li {
                 font-size:20px
             }
             .flavor {
@@ -30,29 +30,9 @@
             .neutral {
                 color:#88f;
             }
-        </style>
-        <style name="mod style">
             dialog {
                 background:#000;
                 color:#fff;
-            }
-            .entry {
-                width: 275px;
-                border:1px solid #fff;
-                padding:5px;
-                border-radius:10px;
-                display: inline-block;
-            }
-            a {
-                cursor:pointer;
-                font-size:30px;
-            }
-            .container {
-                width: 600px;
-                vertical-align:top;
-                border:5px #888 solid;
-                padding:5px;
-                margin:5px;
             }
             .popup {
                 color: #aaf;
@@ -61,8 +41,8 @@
         </style>
     </head>
     <body style="font-family:sans-serif;background:#000;color:#fff;" onbeforeunload="return(save())" onload="init()">
-        <header style="background:#0006;top:0;position:fixed;width:100%;padding:10px"><button onclick="document.getElementById('help').showModal()">Help</button><button onclick="document.getElementById('set').showModal()">Settings</button><button onclick="addRole()">New Role</button><button onclick="document.getElementsByTagName('footer')[0].style.display='';this.parentElement.style.display='none';">Hide menu (recommended before giving roles to players)</button><p></p><label>Add to current role:</label><button onclick="addName(currentRole)">Name</button><button onclick="addSide(currentRole)">Side</button><button onclick="addLore(currentRole)">Lore</button><button onclick="addDesc(currentRole)">Text</button><button onclick="addBad(currentRole)">Bad Attribute</button><button onclick="addGood(currentRole)">Good Attribute</button><button onclick="addNeutral(currentRole)">Neutral Attribute</button><p></p><label>Current role: </label><input readonly id="cur"><button onclick="jumpToCurr()">Jump to current role</button><button onclick="addRole(currentRole)">Copy current role</button><button onclick="jumpToCurr();setTimeout(()=>{if(confirm('Sure?')){currentRole.remove();setCurr(null)}},200)">Delete current role</button><p></p><button onclick="saveGame()">Export</button><button id="load">Import</button><hr></header>
-        <main style="font-family:serif;padding-top:150px"></main>
+        <header style="background:#0006;top:0;position:fixed;width:100%;padding:10px"><button onclick="document.getElementById('help').showModal()">Help</button><button onclick="document.getElementById('set').showModal()">Settings</button><button onclick="addRole()">New Role</button><button onclick="document.getElementsByTagName('footer')[0].style.display='';this.parentElement.style.display='none';">Hide menu (recommended before giving roles to players)</button><p></p><label>Add to current role:</label><button onclick="addName(currentRole)">Name</button><button onclick="addSide(currentRole)">Side</button><button onclick="addLore(currentRole)">Lore</button><button onclick="addDesc(currentRole)">Text</button><button onclick="addBad(currentRole)">Bad Attribute</button><button onclick="addGood(currentRole)">Good Attribute</button><button onclick="addNeutral(currentRole)">Neutral Attribute</button><p></p><label>Current role: </label><input readonly id="cur"><button onclick="jumpToCurr()">Jump to current role</button><button onclick="addRole(currentRole)">Copy current role</button><button onclick="jumpToCurr();setTimeout(()=>{if(confirm('Sure?')){currentRole.remove();setCurr(null)}},200)">Delete current role</button><p></p><button onclick="saveGame()">Export</button><button id="load">Import</button><button onclick="if(confirm(`This will delete your game. Export it first if you don't want to lose it.`)&&confirm('Sure?')){loadGame('')}">Clear</button><hr></header>
+        <main style="font-family:math;padding-top:150px"></main>
         <dialog id="help">
             <button onclick="this.parentElement.close()">Close</button>
             <h2 class="popup">HELP</h2>
