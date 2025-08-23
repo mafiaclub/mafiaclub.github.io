@@ -11,17 +11,22 @@
 	},
 	{
 		"name": "Arms Dealer",
-		"description": "Once per game, choose someone to arm. Their night action is also a kill",
+		"description": "Arm 1 person per game. That night, they unknowingly kill everyone they visit—their real action is roleblocked.",
+		"team": "Mafia"
+	},
+	{
+		"name": "Blackmailer",
+		"description": "Blackmail 2 people per game. They are told that they must claim a town role of your choice that day. They may claim nothing, but die next night if they claim another role or claim blackmail that day.",
 		"team": "Mafia"
 	},
 	{
 		"name": "Bodysnatcher",
-		"description": "Choose two people each night. If either die before the next night, the other's role is announced.",
+		"description": "Pick 2 people per night. If either dies before the next night, they are revealed as the other's role.",
 		"team": "Mafia"
 	},
 	{
 		"name": "Bootlegger",
-		"description": "Target one player per night, blocking their night action.",
+		"description": "Roleblock someone each night.",
 		"team": "Mafia"
 	},
 	{
@@ -37,15 +42,25 @@
 	},
 	{
 		"name": "Devil on My Shoulder",
-		"description": "Visit one person each night to make them vote for the same person as you, without them knowing, during the following day.",
+		"description": "Visit someone each night to make them unknowingly vote for the same person as you the following day.",
 		"team": "Mafia",
 		"author": "Wubbles"
 	},
 	{
+		"name": "Enforcer",
+		"description": "If you are the only one to vote for someone during the day, they die next night. This happens in addition to the mafia kill and is infallible.",
+		"team": "Mafia"
+	},
+	{
 		"name": "Escape Artist",
-		"description": "Survives being voted out unless all the other Mafia members are dead. Every time the Escape Artist is voted out, other than the first night, the Escapee chooses a player to roleblock immediately.",
+		"description": "If at least 1 other Mafia is alive, you survive being voted out—this is announced. Each time you are voted out, other than Day 1, roleblock a player that night.",
 		"team": "Mafia",
 		"author": "Nancy Sun"
+	},
+	{
+		"name": "Extortionist",
+		"description": "On night 3 or later, visit 1 person per game. If town-sided, they lose their role and become a Traitor.",
+		"team": "Mafia"
 	},
 	{
 		"name": "Fireproof Mafia",
@@ -54,29 +69,29 @@
 	},
 	{
 		"name": "Framer",
-		"description": "Every night visit a player. That player is notified that they were framed. If the player you visit is on the block at the end of the day, that player dies instead of who the town votes for.",
+		"description": "Frame someone each night. The framed player is informed of this. If they are on the block, they die instead of whoever had majority vote.",
 		"team": "Mafia",
 		"author": "Nancy Sun"
 	},
 	{
 		"name": "Frontman",
-		"description": "Appear innocent until you perform a kill. Your 1st kill is untrackable and unwatchable.",
+		"description": "Appear innocent until your 1st kill, which is invisible.",
 		"team": "Mafia"
 	},
 	{
 		"name": "Gambler",
-		"description": "Can shoot a fellow mafia member to gain bulletproof, appear innocent, or become unwatchable untrackable. (This kill counts as the Mafia’s kill that night)",
+		"description": "Can shoot another mafia member to become 1-shot bulletproof, innocent, or invisible (this counts as the Mafia kill that night).",
 		"team": "Mafia",
 		"author": "Webbs"
 	},
 	{
 		"name": "Godfather",
-		"description": "Appears innocent to Sheriff and Seer.",
+		"description": "Appear innocent to all guilt checks.",
 		"team": "Mafia"
 	},
 	{
 		"name": "Gravedigger",
-		"description": "When performing the kill, the role of the player killed is not revealed except to the Gravedigger.",
+		"description": "When you kill, if the victim doesn't survive, see their role at the end of the night; it isn't announced.",
 		"team": "Mafia"
 	},
 	{
@@ -86,7 +101,7 @@
 	},
 	{
 		"name": "Hitman",
-		"description": "Unnoticeable by Tracker and Watcher.",
+		"description": "Invisible.",
 		"team": "Mafia"
 	},
 	{
@@ -96,7 +111,7 @@
 	},
 	{
 		"name": "Igniter",
-		"description": "Twice per game, turn the communal Mafia kill into a burn",
+		"description": "Twice per game, turn the Mafia kill into a burn.",
 		"team": "Mafia"
 	},
 	{
@@ -117,12 +132,12 @@
 	},
 	{
 		"name": "Lawyer",
-		"description": "Defend one person each night. If three or more people oppose that person being voted out the next day, they do not die. Otherwise, you die with them. The other mafia do not know who you are. Do not wake with the Mafia.",
+		"description": "Defend someone each night. The next day, if there are 3 or more people who don't vote for the client, the client survives even if they still have majority vote. If the client is voted out, you die too. The other Mafia don't know your role. Do not wake with them.",
 		"team": "Mafia"
 	},
 	{
 		"name": "Madman",
-		"description": "If this player doesn't perform the kill for the Mafia, perform an additional kill.",
+		"description": "Each night, if you don't do the Mafia kill, wake up separately for an extra kill.",
 		"team": "Mafia",
 		"author": "Devin Lehmacher"
 	},
@@ -132,8 +147,23 @@
 		"team": "Mafia"
 	},
 	{
+		"name": "Mastermind",
+		"description": "Each night, if you don't kill, you may change 1 mafia member's role. The change occurs next night. No duplicates.",
+		"team": "Mafia"
+	},
+	{
+		"name": "Mobber",
+		"description": "While you live, voting is done with eyes closed.",
+		"team": "Mafia"
+	},
+	{
+		"name": "Seeker",
+		"description": "Each night, temporarily gain the ability of the player last voted out.",
+		"team": "Mafia"
+	},
+	{
 		"name": "Scenic",
-		"description": "Choose a player each night.  You will appear to visit them (and only them) even if you perform the mafia kill.",
+		"description": "Choose a player each night. You appear to visit them (and only them) even if you kill someone else.",
 		"team": "Mafia"
 	},
 	{
@@ -143,7 +173,7 @@
 	},
 	{
 		"name": "Sniper",
-		"description": "If you perform the kill, the person you targetted will be shot the following night.",
+		"description": "If you kill, you visit the victim tonight but they die next night.",
 		"team": "Mafia"
 	},
 	{
@@ -154,7 +184,7 @@
 	},
 	{
 		"name": "Strongman",
-		"description": "Once per game, if you perform the kill, make your kill unblockable by using your strength.",
+		"description": "Make one of your kills infallible per game with your strength.",
 		"team": "Mafia"
 	},
 	{
@@ -174,7 +204,7 @@
 	},
 	{
 		"name": "Admirer",
-		"description": "Takes over for the Serial Killer the night after they die. Wins with the Serial Killer. The Admirer is shown who the Serial Killer is, but the Serial Killer does not know who the Admirer is.",
+		"description": "Know the Serial Killer (SK); win with them. The SK knows that there is an Admirer but not who they are. Can kill once per night if the SK dies.",
 		"team": "Third Party"
 	},
 	{
@@ -184,17 +214,17 @@
 	},
 	{
 		"name": "Amnesiac",
-		"description": "Must take on the role of a dead player and fufill that player's win condition in order to win.  Before claiming a role is one shot bulletproof.",
+		"description": "Each night, see all dead roles. Once per game, pick one to become (announced \"The Amnesiac remembered a role\"). 1-shot bulletproof before picking.",
 		"team": "Third Party"
 	},
 	{
 		"name": "Apprentice",
-		"description": "Once per game, choose someone. At the end of the next day, you become their admirer, with their win condition (Announced “The Apprentice has chosen a master”) and receive relevant information the following night. If they die before the next night, you immediately ascend. Bulletproof and Fireproof until you choose.",
+		"description": "Once per game, pick a Master (announced \"The Apprentice has a master\"). See the Master's role and any relevant info. Win with them and become their role if they die. 1-shot bulletproof before picking.",
 		"team": "Third Party"
 	},
 	{
 		"name": "Arsonist",
-		"description": "Every night either choose a player to douse with gasoline or ignite all doused players. One shot bulletproof.",
+		"description": "Each night either douse someone with gasoline or burn all doused players. 1-shot bulletproof.",
 		"team": "Third Party"
 	},
 	{
@@ -203,25 +233,61 @@
 		"team": "Third Party"
 	},
 	{
+		"name": "Barista",
+		"description": "1-shot bulletproof. Kill 1 person per night. The person you visit is silenced the next day if they live.",
+		"team": "Third Party"
+	},
+	{
+		"name": "Doomsayer",
+		"description": "1-shot bulletproof. Each night, the person you last voted for burns to death if they survived the vote. This is not a visit.",
+		"team": "Third Party"
+	},
+	{
 		"name": "Douser",
-		"description": "Third party sided with the arsonist.  Arsonist is told that the douser is in the game but does not know who they are. Douser knows the arsonist. Douse one player each night.  If the arsonist dies the douser gains the ability to light up *once*.",
+		"description": "Know the Arsonist; win with them. The Arsonist knows that there is a Douser but not who they are. Douse one player per night. Can ignite ONCE if the Arsonist dies.",
 		"team": "Third Party",
 		"author": "Alyssa"
 	},
 	{
 		"name": "Herbalist",
-		"description": "Choose someone each night.  They will be informed that they have been poisoned, and will die the night after unless they are saved.  Win with the arsonist.",
+		"description": "Poison someone each night. They know that they were poisoned, and will die the next night unless saved. Win with the Arsonist.",
 		"team": "Third Party",
 		"author": "Ben"
 	},
 	{
+		"name": "Infiltrator",
+		"description": "At the start of the game choose a faction to win with. See who else is in that faction unless choosing Town.",
+		"team": "Third Party",
+		"author": "Ben"
+	},
+	{
+		"name": "Jester",
+		"description": "Win with any side if voted out. If voted out, the mod may or may not give you 1 infallible revenge kill that night.",
+		"team": "Third Party"
+	},
+	{
+		"name": "Joker",
+		"description": "1-shot bulletproof. Kill 1 person per night. Once per game, if on the block, may pick someone to take your place before voting.",
+		"team": "Third Party"
+	},
+	{
 		"name": "Matchmaker",
-		"description": "Infinite bulletproof. Each night, visit two players to match them. If a matched player is shot, everyone matched with them is shot too. Does not go through bulletproof. Can shoot 1 person per game.",
+		"description": "Infinite bulletproof. Each night, visit two players to match them. If a matched player is shot, everyone matched with them is shot too. Does not go through bulletproof. Can shoot once per game.",
 		"team": "Third Party"
 	},
 	{
 		"name": "Monk",
 		"description": "Reflect all visits to you (including kills). Win with any side if all killing roles die.",
+		"team": "Third Party"
+	},
+	{
+		"name": "Pirate",
+		"description": "1-shot bulletproof. On odd-numbered nights, roleblock 1 person. On even-numbered nights, kill 2 people.",
+		"team": "Third Party"
+	},
+	{
+		"name": "Serial Killer",
+		"description": "Kill someone each night. The first night choose either: infinite bulletproof (thumbs up) or 1-shot bulletproof, innocent, and invisible (thumbs down).",
 		"team": "Third Party"
 	},
 	{
@@ -231,7 +297,7 @@
 	},
 	{
 		"name": "Zombie",
-		"description": "1-shot bulletproof. Infect one person each night to convert them into a fellow zombie. That player is notified that they have become a zombie. They are no longer their previous role, and they now win with the original zombie. All zombified players die if the original zombie dies. (Zombification can be blocked by saving roles or role blocks, and can be cured by the witch)",
+		"description": "1-shot bulletproof. Zombify someone each night. That player knows that they are now a zombie. They lose their previous role and win with the original zombie. All zombies die if the original zombie dies. Zombification can be blocked by saving roles or cured by the witch.",
 		"team": "Third Party",
 		"author": "Wimblemim"
 	},
@@ -240,28 +306,6 @@
 		"description": "You don't know how to read, never did.",
 		"team": "Fourth Party",
 		"author": "Lemon"
-	},
-	{
-		"name": "God",
-		"description": "Can kill the mod at any time and replace them as the new mod.",
-		"team": "Fourth Party",
-		"author": "Wumble"
-	},
-	{
-		"name": "Jester",
-		"description": "Win with any side if voted out. If voted out, get 1 unblockable revenge kill that night.",
-		"team": "Third Party"
-	},
-	{
-		"name": "Infiltrator",
-		"description": "At the start of the game choose a faction to win with.  You will be told who else is in that faction.",
-		"team": "Third Party",
-		"author": "Ben"
-	},
-	{
-		"name": "Serial Killer",
-		"description": "Kill one person each night. The first night choose either: bulletproof (thumbs up) or innocent, untrackable, unwatchable and one shot bullet proof (thumbs down).",
-		"team": "Third Party"
 	},
 	{
 		"name": "1-Shot Bulletproof Townie",
@@ -280,7 +324,12 @@
 	},
 	{
 		"name": "Acolyte",
-		"description": "Know the Sage. Become the Sage if the Sage dies",
+		"description": "Know the Sage. Become the Sage if the Sage dies.",
+		"team": "Town"
+	},
+	{
+		"name": "Arbitrator",
+		"description": "Once per game at night, can pick who is on the block the next day.",
 		"team": "Town"
 	},
 	{
@@ -295,20 +344,35 @@
 		"team": "Town"
 	},
 	{
+		"name": "Blacksmith",
+		"description": "Replenish the bulletproof of anyone who visits you, if it was lost.",
+		"team": "Town"
+	},
+	{
+		"name": "Blind Medium",
+		"description": "Visit someone each night. The mod points right or left based on the direction of the nearest guilty player from the target, excluding the target. If the directions tie, the mod picks arbitrarily.",
+		"team": "Town"
+	},
+	{
 		"name": "Bodyguard",
-		"description": "Visit one player each night. Any visit on that player will visits you instead. 1 shot bulletproof.",
+		"description": "Visit 1 player per night. All visits to them go to you instead. 1-shot bulletproof.",
 		"team": "Town",
 		"author": "Chris Colen"
 	},
 	{
+		"name": "Bookkeeper",
+		"description": "Pick someone each night. The next night, you will see whom they visited and who visited them on the night you chose them.",
+		"team": "Town"
+	},
+	{
 		"name": "Businessman",
-		"description": "Permanently framed, but can motion for a reblock while they are on the block. Must be given at least 5 minutes of time on the block, unless they cut their time short. (This role can be Town-sided, Mafia-sided, or Third Party; the player chooses on the first night)",
-		"team": "Third Party",
+		"description": "Always framed, but can motion for a reblock while on the block. Must get at least 5 minutes to defend, unless you end early.",
+		"team": "Town",
 		"author": "Wubble"
 	},
 	{
 		"name": "Busdriver",
-		"description": "Switch the seats of two players.",
+		"description": "Swap 2 players' seats per night—announced in the morning.",
 		"team": "Town"
 	},
 	{
@@ -319,17 +383,17 @@
 	},
 	{
 		"name": "Closed",
-		"description": "A game in which no roles are annouced at the begining, and roles are revealed as people die.",
+		"description": "A game in which no roles are announced initially, and roles are revealed as people die.",
 		"team": "Town"
 	},
 	{
-		"name": "Confirmable/Can Be Confirmed",
-		"description": "Any role that can prove that they are who they say they are.  For example, a mayor might prove their role by convincing the town to tie a vote, so that they are a tie breaker",
+		"name": "Confirmable",
+		"description": "A role that can prove itself. For example, the Old Man with Shotgun is confirmable since no one else can kill during the day.",
 		"team": "Town"
 	},
 	{
 		"name": "Conspiracy Theorist",
-		"description": "Once per game can ask three questions to the mod during the night, one will be answered truthfully, the other two will be answered falsely.",
+		"description": "Once per game can ask the mod three questions at night; one will be answered truthfully, the other two will be answered falsely.",
 		"team": "Town",
 		"author": "Wooms"
 	},
@@ -351,29 +415,28 @@
 		"team": "Town"
 	},
 	{
-		"name": "David",
-		"description": "What does the Godfather do?",
-		"team": "Fourth Party",
-		"author": "Will"
-	},
-	{
 		"name": "Deputy",
 		"description": "Take over as Sheriff the night after the Sheriff dies.",
 		"team": "Town"
 	},
 	{
 		"name": "Doctor",
-		"description": "Save a person each night. Can't save the same person two nights in a row.",
+		"description": "Save a person each night. Cannot save the same person two nights in a row.",
 		"team": "Town"
 	},
 	{
-		"name": "Executioner",
-		"description": "The block is one person larger. Choose someone each night: they become the last person on the block. If the vote ties, your choice dies.",
+		"name": "Eavesdropper",
+		"description": "You may open your eyes at night—if other roles do this, it is cheating! If an evil player sees you with your eyes open, you die infallibly.",
 		"team": "Town"
 	},
 	{
 		"name": "Electrician",
 		"description": "The first person of the game to visit you dies instantly.",
+		"team": "Town"
+	},
+	{
+		"name": "Executioner",
+		"description": "The block is one person larger. Choose someone each night: they become the last person on the block. If the vote ties, your choice dies.",
 		"team": "Town"
 	},
 	{
@@ -384,6 +447,11 @@
 	{
 		"name": "Fireproof Townie",
 		"description": "Immune to being burned.",
+		"team": "Town"
+	},
+	{
+		"name": "Final Girl",
+		"description": "1-shot bulletproof, fireproof. If the Mafia would win by numerical majority, the Town wins instead if you are alive.",
 		"team": "Town"
 	},
 	{
@@ -401,7 +469,7 @@
 		"description": "Visit two other people each night to learn if they win with the same team.",
 		"team": "Town",
 		"author": "Wilt"
-  },
+  	},
 	{
 		"name": "Grave Robber",
 		"description": "Learns the roles of players that are killed by the gravedigger",
@@ -409,23 +477,23 @@
 		"author": "lmn"
 	},
 	{
-		"name": "Insomniac",
-		"description": "1-shot bulletproof. Each night, see the actions others performed on you.",
+		"name": "Hard Claim",
+		"description": "When someone says their exact role to everyone.",
 		"team": "Town"
 	},
 	{
-		"name": "Hard Claim",
-		"description": "When someone announces their exact role to the entire town.",
+		"name": "Humanist Vampire",
+		"description": "Drain the blood of 1 person per night, roleblocking them. A person drained twice dies.",
 		"team": "Town"
 	},
 	{
 		"name": "Hunter",
-		"description": "You are a 1-shot bulletproof, untrackable, 1-shot vigilante. Can choose one person per game to make 1-shot bulletproof.",
+		"description": "1-shot bulletproof, 1-shot vigilante. Can make 1 person per game 1-shot bulletproof.",
 		"team": "Town"
 	},
 	{
 		"name": "Information Role",
-		"description": "Any role that can gain information about other players through their night ability",
+		"description": "Roles whose night actions gain information about other players.",
 		"team": "Town"
 	},
 	{
@@ -435,9 +503,14 @@
 	},
 	{
 		"name": "Librarian",
-		"description": "Up to two people sitting next to you are protected during the night. You are notified if anyone has been doused that night.",
+		"description": "The closest living person on each side of you is protected at night. Each night, see if anyone was doused.",
 		"team": "Town",
 		"author": "Wibbs"
+	},
+	{
+		"name": "Lobbyist",
+		"description": "Each night, you may nominate 1 person. The mod announces that they start the day with 1 nomination, but will not say who nominated them.",
+		"team": "Town"
 	},
 	{
 		"name": "Mason",
@@ -456,7 +529,7 @@
 	},
 	{
 		"name": "Mathematician",
-		"description": "Learn how many people were visited each night",
+		"description": "See how many visits occur each night.",
 		"team": "Town"
 	},
 	{
@@ -465,13 +538,18 @@
 		"team": "Town"
 	},
 	{
+		"name": "Metagaming",
+		"description": "Using info that game characters wouldn't have access to, like hearing the mod stand next to someone and concluding that they wake up, using the night length to guess roles, making inferences based on mod fails, etc. This is discouraged.",
+		"team": "Mafia"
+	},
+	{
 		"name": "Milkman",
 		"description": "Give milk to a player each night. The milk does nothing, but is announced in the morning.",
 		"team": "Town"
 	},
 	{
 		"name": "Miller",
-		"description": "Appears guilty when investigated by the Sheriff (or Deputy)",
+		"description": "Appear guilty to all guilt checks.",
 		"team": "Town"
 	},
 	{
@@ -481,17 +559,22 @@
 	},
 	{
 		"name": "Mod Fail",
-		"description": "When the moderator makes a mistake.  May result in everyone going back to sleep while the mistake is corrected.  The prevalence of mod fails shockingly has an inverse correlation to the amount of time till sunrise.",
+		"description": "When the mod makes a mistake. Everyone may have to go to sleep while it is corrected. The prevalence of mod fails shockingly has an inverse correlation to the amount of time till sunrise.",
 		"team": "Town"
 	},
 	{
+		"name": "M^2",
+		"description": "🇬🇧",
+		"team": "Fourth Party"
+	},
+	{
 		"name": "Neighbor",
-		"description": "Learn if either of the two people sitting next to you wake up at night (you are given a thumbs up or thumbs down). Can visit either of them to learn if THEY visited anyone that night",
+		"description": "Learn if either of the two people next to you wake up at night (you get a thumbs up or thumbs down). Can visit either of them to learn if THEY visited anyone that night.",
 		"team": "Town"
 	},
 	{
 		"name": "Old Man with Shotgun",
-		"description": "Once per game, any time during the day before voting, can stand up and kill a player.",
+		"description": "Once per game, can kill a player during the day before voting. Ignores bulletproof.",
 		"team": "Town"
 	},
 	{
@@ -505,8 +588,18 @@
 		"team": "Town"
 	},
 	{
+		"name": "Paparazzo",
+		"description": "Pick a player each night to see a photo of them during their night action.",
+		"team": "Town"
+	},
+	{
 		"name": "Paranoid Townie",
 		"description": "If a player visits you during the night, kill them.",
+		"team": "Town"
+	},
+	{
+		"name": "Politician",
+		"description": "If voted out unanimously, is revived the next day with the ability to check one player per night to see if they are Town. Dies as usual if not unanimous.",
 		"team": "Town"
 	},
 	{
@@ -516,6 +609,11 @@
 		"author": "Devin Lehmacher"
 	},
 	{
+		"name": "Prime Minister",
+		"description": "Once per game, after someone is voted out, \"veto\" the vote before night. They don't die and their role isn't revealed.",
+		"team": "Town"
+	},
+	{
 		"name": "Prophet",
 		"description": "Know one role that is in the game (aside from your own).",
 		"team": "Town",
@@ -523,30 +621,29 @@
 	},
 	{
 		"name": "Psychic",
-		"description": "Learn the number of guilty players left in the game each night.",
+		"description": "See the number of guilty players left each night.",
 		"team": "Town",
-		"author": "Devin Lehmacher",
-		"clarifications": "Does not know the number of third parties in the game."
+		"author": "Devin Lehmacher"
 	},
 	{
 		"name": "Clairvoyant",
-		"description": "Prior to each morning you will be told who has been killed.  You may choose to save one person per game.",
+		"description": "Before each morning, see who will die. You may save one person per game.",
 		"team": "Town",
 		"author": "Ben"
 	},
 	{
 		"name": "Queen",
-		"description": "Knows if there is a King or a Jester in the game. Cannot be silenced by the King. 1-shot bulletproof",
+		"description": "Know if there is a King/Jester in the game. Can't be silenced by the King. 1-shot bulletproof.",
 		"team": "Town"
 	},
 	{
 		"name": "Quick Block",
-		"description": "Not to be confused with a sudden or swift block.  When players quickly nominate and second the entire block the moment that the mod has finished with morning announcements.",
+		"description": "When players rapidly nominate and second the block, exploiting the fact that it \"locks\" when full.",
 		"team": "Town"
 	},
 	{
 		"name": "Revenant",
-		"description": "Can fake your death once per game. Choose a town-sided role to be revealed as by the mod. You will be resurrected the following day. (The town can still lose while the revenant is faking their death)",
+		"description": "Can feign death once per game, resurrected the next day. Pick a Town role to be revealed as by the mod (the Town can still lose while you feign death).",
 		"team": "Town",
 		"author": "Werbs"
 	},
@@ -557,8 +654,13 @@
 		"author": "Wulbs"
 	},
 	{
+		"name": "Rich",
+		"description": "Joins all games.",
+		"team": "Fourth Party"
+	},
+	{
 		"name": "Sage",
-		"description": "Non-killing roles targeting you are reflected",
+		"description": "Non-killing visits to you are reflected.",
 		"team": "Town"
 	},
 	{
@@ -579,27 +681,27 @@
 	},
 	{
 		"name": "Servant",
-		"description": "Aid someone each night. Their night action is infallible.",
+		"description": "Aid someone each night. Their action is infallible.",
 		"team": "Town"
 	},
 	{
 		"name": "Sheriff",
-		"description": "Check one person each night. Thumbs up means that player is guilty (not town) and thumbs down means that player is innocent.",
+		"description": "Guilt-check 1 person per night. See thumbs up if they are guilty (not town); thumbs down if innocent.",
 		"team": "Town"
 	},
 	{
 		"name": "Shopkeeper",
-		"description": "Anyone who visits you during the night is protected",
+		"description": "Anyone visiting you at night is protected.",
 		"team": "Town"
 	},
 	{
 		"name": "Shrink",
-		"description": "Each night visit a player, if that player is third party convert them to town (and they lose whatever abilities they have).",
+		"description": "Each night visit someone. If they are 3rd party, they become a basic Townie.",
 		"team": "Town"
 	},
 	{
 		"name": "Sleepwalker",
-		"description": "Randomly visits a player each night, without knowing who that player is",
+		"description": "Visit a random player each night, without knowing whom.",
 		"team": "Town"
 	},
 	{
@@ -619,13 +721,8 @@
 		"team": "Town"
 	},
 	{
-		"name": "Sudden Block",
-		"description": "Not to be confused with a quick or swift block.  When players suddenly nominate and second the entire block, after some time has passed during the day.",
-		"team": "Town"
-	},
-	{
 		"name": "Super Citizen",
-		"description": "One person who everyone tells their roles to privately.  This is usually someone who has been confirmed as town, and they will likely organize all townie's actions based on their knowledge.",
+		"description": "Everyone privately tells their roles to this person. Usually someone who is confirmed Town, they will likely organize all Town actions based on their knowledge.",
 		"team": "Town"
 	},
 	{
@@ -639,22 +736,17 @@
 		"team": "Town"
 	},
 	{
-		"name": "Swift Block",
-		"description": "Not to be confused with a sudden or quick block.",
-		"team": "Town"
-	},
-	{
 		"name": "Tinker",
-		"description": "Once per game, choose someone. They regain all uses of their abilities, including bulletproof. You can target yourself only once. 1-shot bulletproof.",
+		"description": "Once per game, choose someone. They regain all uses of their abilities and bulletproof. You can target yourself only once. 1-shot bulletproof.",
 		"team": "Town"
 	},
 	{
-		"name": "Town Sided Arsonist",
-		"description": "Town sided arsonists are arsonists who decide to play for the towns benifit instead of their own.  They will often douse themselves on the first night, guranteeing that when they light up they will die.  This is not an actual role, but some people who get arsonist choose to play this way.",
+		"name": "Town Crier",
+		"description": "Twice per game, visit someone else to let them use their ability twice tonight unless it has limited uses.",
 		"team": "Town"
 	},
 	{
-		"name": "Town Sided Killing Role",
+		"name": "Town Killing Role",
 		"description": "Any town sided role that can kill.",
 		"team": "Town"
 	},
@@ -665,12 +757,12 @@
 	},
 	{
 		"name": "Tracker",
-		"description": "Tracks one player each night, seeing who they visit.",
+		"description": "Track one player each night, seeing whom they visit.",
 		"team": "Town"
 	},
 	{
 		"name": "Trapper",
-		"description": "You get 1 trap. Each night, either set the trap on a player or save it for later. If someone other than you visits the trapped player, the trap goes off, killing everyone other than you who visited that player. If the trap goes off, you cannot use it again.",
+		"description": "Set a trap on 1 player per game. It lasts until someone other than you visits the trapped player; then it goes off, killing everyone other than you who visited them that night.",
 		"team": "Town"
 	},
 	{
@@ -697,8 +789,63 @@
 	},
 	{
 		"name": "Witch",
-		"description": "Each night you may visit a player, if that player was shot save them, otherwise kill them.",
+		"description": "Visit someone each night. If they would die, save them. If not, kill them.",
 		"team": "Town",
 		"author": "Devin Lehmacher"
+	},
+	{
+		"name": "Bulletproof",
+		"description": "Survive being shot, but not other forms of death like poison, fire, zombification, and the vote. Some roles can take a finite number of shots before dying; some are infinite bulletproof.",
+		"team": "Keyword"
+	},
+	{
+		"name": "Burn",
+		"description": "Death by fire. Mods usually say someone \"burned to death\" to distinguish it from other kills. Fireproof roles survive.",
+		"team": "Keyword"
+	},
+	{
+		"name": "Guilt Check",
+		"description": "Checking if others are innocent/guilty Sheriff, Deputy, Seer, etc. Town roles are innocent and others are guilty, with some exceptions.",
+		"team": "Keyword"
+	},
+	{
+		"name": "Infallible",
+		"description": "Infallible actions ALWAYS take effect regardless of other actions. For example, they are not stopped by roleblocks and can't be redirected to another target, and the target can't be protected from the effect.",
+		"team": "Keyword"
+	},
+	{
+		"name": "Invisible",
+		"description": "Appear to visit no one. You still appear to wake up, but visit-tracking roles don't see your visit, Neighbor sees that you don't visit, Mathematician can't count your visit, etc.",
+		"team": "Keyword"
+	},
+	{
+		"name": "Mob Rule",
+		"description": "Voting when 3 people are alive. Living players shut their eyes and the mod says their names one at a time. Living players raise their hand when the name of whomever they want to vote for is said. 3 consecutive ties begin night.",
+		"team": ""
+	},
+	{
+		"name": "No Game Talk",
+		"description": "People can't discuss the game (e.g. their or someone else's role, actions, etc.) but may discuss other things. Living players are subject to this at night and dead players are always subject to this.",
+		"team": ""
+	},
+	{
+		"name": "No Talking During Defenses",
+		"description": "\"You have the right to remain silent. Anything you say is not allowed because it is my defense.\" At any point in their defense, players may demand silence.",
+		"team": ""
+	},
+	{
+		"name": "Roleblock",
+		"description": "An action is blocked. Info roles know if they are blocked e.g. X gesture from the mod. Other roles do not know if they are blocked; the mod just ignores their action. Blocked roles visit no one. If 2 roleblockers block each other, ignore all visits from both.",
+		"team": "Keyword"
+	},
+	{
+		"name": "Silence",
+		"description": "Different from No Game Talk in that silenced players can't talk at all, though gestures/writing are OK. Some roles can silence others. Mods may silence people in extreme cases.",
+		"team": "Keyword"
+	},
+	{
+		"name": "Visit",
+		"description": "Perform an action on another player, like killing, saving, dousing, etc.",
+		"team": "Keyword"
 	}
 ]
