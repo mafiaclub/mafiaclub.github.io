@@ -5,6 +5,11 @@
 		"team": "Mafia"
 	},
 	{
+		"name": "Abductor",
+		"description": "Abduct 1 player per game at night. They are informed of being held hostage. If you are voted out, the hostage dies.",
+		"team": "Mafia"
+	},
+	{
 		"name": "Accuser",
 		"description": "Choose someone each night. They are automatically the last person on the block",
 		"team": "Mafia"
@@ -460,6 +465,11 @@
 		"team": "Town"
 	},
 	{
+		"name": "Glass Cannon",
+		"description": "Each night, if no one visits you, you may kill 1 person. Die if anyone visits you.",
+		"team": "Town"
+	},
+	{
 		"name": "Golem",
 		"description": "Can only die by fire or vote. Visit anyone who dies.",
 		"team": "Town"
@@ -702,6 +712,11 @@
 	{
 		"name": "Sleepwalker",
 		"description": "Visit a random player each night, without knowing whom.",
+		"team": "Town"
+	},
+	{
+		"name": "Soldier",
+		"description": "Starting at 0, gain 1 use of the Veteran ability each time anyone visits you. It can be used the night after you gain it.",
 		"team": "Town"
 	},
 	{
