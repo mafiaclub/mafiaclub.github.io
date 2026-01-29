@@ -1,7 +1,7 @@
 {
     "version": "standard",
     "name": "Standard",
-    "description": "This is the set of roles that we play with most often.",
+    "description": "Easy enough for beginners but more flexible than Basic.",
     "notes":"Role set from 'reduced' replaced this set as of 9/20/19",
     "roles": [
       "Townie",
