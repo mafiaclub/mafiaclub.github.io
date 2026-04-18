@@ -20,6 +20,11 @@
 		"team": "Mafia"
 	},
 	{
+		"name": "Assassin",
+		"description": "Each night, you may pick a player and guess their role. If you're right, they die infallibly. Morning announcements show them as \"assassinated\". If you're wrong, you're assassinated instead. If this role is in the game, there's also a Whistleblower.",
+		"team": "Mafia"
+	},
+	{
 		"name": "Blackmailer",
 		"description": "Blackmail 2 people per game. They are told that they must claim a town role of your choice that day. They may claim nothing, but die next night if they claim another role or claim blackmail that day.",
 		"team": "Mafia"
@@ -131,8 +136,18 @@
 		"team": "Mafia"
 	},
 	{
+		"name": "Initiate",
+		"description": "Start the game as a Traitor. If all killing Mafia are dead, become normal Mafia and start killing. Appear innocent until you start killing.",
+		"team": "Mafia"
+	},
+	{
 		"name": "King",
 		"description": "Once per game can silence everyone for the following day. 1-shot bulletproof",
+		"team": "Mafia"
+	},
+	{
+		"name": "Kingpin",
+		"description": "Once per game, if performing the Mafia kill, can kill 2 adjacent players instead of just 1.",
 		"team": "Mafia"
 	},
 	{
@@ -183,7 +198,7 @@
 	},
 	{
 		"name": "Spy",
-		"description": "At the start of the game, you are told a role that is not in this game.",
+		"description": "On night 1, learn a role that isn't in the Town.",
 		"team": "Mafia",
 		"author": "Devin Lehmacher"
 	},
@@ -234,12 +249,17 @@
 	},
 	{
 		"name": "Backstabber",
-		"description": "1-shot bulletproof, fireproof, innocent. Wake with the Mafia, appear normal Mafia. If you perform the kill, it does not happen. If the Mafia have won, regain bulletproof and become a serial killer.",
+		"description": "1-shot bulletproof, fireproof, innocent. Wake with the Mafia, appear normal Mafia. If you perform the kill, it does not happen. If the Mafia have won or are all dead, regain bulletproof and become a serial killer.",
 		"team": "Third Party"
 	},
 	{
 		"name": "Barista",
 		"description": "1-shot bulletproof. Kill 1 person per night. The person you visit is silenced the next day if they live.",
+		"team": "Third Party"
+	},
+	{
+		"name": "Bounty Hunter",
+		"description": "1-shot bulletproof. Each night, the mod tells you 1 random living role (if a side has a big advantage, the mod may want to pick from that side), and you visit 1 player. If the player you visit has that role, they die infallibly; else nothing happens. Morning announcements show them as \"assassinated\". Appear innocent until your 1st kill. If all other evil killers are dead, become a Waterboarder.",
 		"team": "Third Party"
 	},
 	{
@@ -283,6 +303,11 @@
 	{
 		"name": "Monk",
 		"description": "Reflect all visits to you (including kills). Win with any side if all killing roles die.",
+		"team": "Third Party"
+	},
+	{
+		"name": "Parasite",
+		"description": "On night 1, pick a player to inhabit their body. On later nights, either do nothing or move to a new host, which kills the old host if not saved. Non-info visits to you fail. Infallible and info visits to you visit the old host. You survive if you'd be voted. If your host dies, you die.",
 		"team": "Third Party"
 	},
 	{
@@ -803,8 +828,13 @@
 		"team": "Town"
 	},
 	{
+		"name": "Whistleblower",
+		"description": "On night 1, see 3 roles that aren't in the Town. Know if there's an Assassin.",
+		"team": "Town"
+	},
+	{
 		"name": "Witch",
-		"description": "Visit someone each night. If they would die, save them. If not, kill them.",
+		"description": "Optionally visit someone each night. If they'd die, save them. If not, kill them.",
 		"team": "Town",
 		"author": "Devin Lehmacher"
 	},
@@ -855,7 +885,7 @@
 	},
 	{
 		"name": "Silence",
-		"description": "Different from No Game Talk in that silenced players can't talk at all, though gestures/writing are OK. Some roles can silence others. Mods may silence people in extreme cases.",
+		"description": "Different from No Game Talk in that silenced players can't talk at all. Some roles can silence others. Mods may or may not allow writing/gestures, and may silence people in extreme cases.",
 		"team": "Keyword"
 	},
 	{
