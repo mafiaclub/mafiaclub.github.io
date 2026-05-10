@@ -3,5 +3,6 @@
     "standard",
     "plus",
     "all",
-    "CommonTerms"
+    "CommonTerms",
+    "CustomPicker"
 ]

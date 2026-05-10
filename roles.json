@@ -866,17 +866,17 @@
 	{
 		"name": "Mob Rule",
 		"description": "Voting when 3 people are alive. Living players shut their eyes and the mod says their names one at a time. Living players raise their hand when the name of whomever they want to vote for is said. 3 consecutive ties begin night.",
-		"team": ""
+		"team": "Keyword"
 	},
 	{
 		"name": "No Game Talk",
 		"description": "People can't discuss the game (e.g. their or someone else's role, actions, etc.) but may discuss other things. Living players are subject to this at night and dead players are always subject to this.",
-		"team": ""
+		"team": "Keyword"
 	},
 	{
 		"name": "No Talking During Defenses",
 		"description": "\"You have the right to remain silent. Anything you say is not allowed because it is my defense.\" At any point in their defense, players may demand silence.",
-		"team": ""
+		"team": "Keyword"
 	},
 	{
 		"name": "Roleblock",
