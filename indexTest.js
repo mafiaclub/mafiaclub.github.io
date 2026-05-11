@@ -1,16 +1,6 @@
 var popover = function(name, description, team, category) {
   //toggle-able popovers for custom display tab
-  if (quoteattr(category) == "killing") {
-    return '<button id="collapseSelf" onclick="collapseSelf()" type="button" class="btn btn-default '+team.split(' ')[0]+'" href="#" data-content="'
-    + quoteattr(description)
-    + '" rel="popover" data-placement="top" data-original-title="'
-    + quoteattr(name + ' - ' + team)
-    + '" data-toggle="popover" data-trigger="hover">'
-    + quoteattr(name)
-    + '<\/button>';
-  }
-  //normal popovers for set role display
-  return '<button type="button" class="btn btn-default '+team.split(' ')[0]+'" href="#" data-content="'
+    return '<button id="'+name+'" onclick="collapseSelf('+name+')" type="button" class="btn btn-default '+team.split(' ')[0]+'" href="#" data-content="'
     + quoteattr(description)
     + '" rel="popover" data-placement="top" data-original-title="'
     + quoteattr(name + ' - ' + team)
@@ -41,7 +31,7 @@ var tierList = function(tier, active) {
     return '<div class="tab-pane fade' + (active ? ' active in' : '')
     + '" id="tier-' + quoteattr(tier.version) + '">'
     + '<p>' + quoteattr(tier.description) + '<\/p>'
-    + '<button id="customPicker" class="btn success">Basic</button>'
+    + '<button id="customPicker" class="btn success">TESTING</button>'
     + '<div id="tier-' + quoteattr(tier.version) + '-list" class="container">'
     + '<\/div>'
     + '<p><a href="/detail?' + tier.version + '">Expand role descriptions.</a></p>'
@@ -86,8 +76,8 @@ $.getJSON(prefix + '/tier-manifest.json', function(tiers) {
   });
 });
 //Custom Buttons "self-collapse" feature
-function collapseSelf(){
-  var x = document.getElementById("myDIV");
+function collapseSelf(self){
+  var x = document.getElementById(quoteattr(self));
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
