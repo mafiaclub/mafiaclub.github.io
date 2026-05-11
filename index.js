@@ -26,13 +26,26 @@ var tab = function(tier, active) {
 };
 
 var tierList = function(tier, active) {
-  return '<div class="tab-pane fade' + (active ? ' active in' : '')
+  /*if (1 == 1) {
+    return '<div class="tab-pane fade' + (active ? ' active in' : '')
     + '" id="tier-' + quoteattr(tier.version) + '">'
     + '<p>' + quoteattr(tier.description) + '<\/p>'
     + '<div id="tier-' + quoteattr(tier.version) + '-list" class="container">'
+    + '<p>fortnite<\/p>'
     + '<\/div>'
     + '<p><a href="/detail?' + tier.version + '">Expand role descriptions.</a></p>'
     + '<\/div>';
+  }*/
+  return '<div class="tab-pane fade' + (active ? ' active in' : '')
+    + '" id="tier-' + quoteattr(tier.version) + '">'
+    + '<p>' + quoteattr(tier.description) + '<\/p>'
+    + '<p>TESTING!<\/p>'
+    + '<div id="tier-' + quoteattr(tier.version) + '-list" class="container">'
+    + '<\/div>'
+    + '<p>TESTING!<\/p>'
+    + '<p><a href="/detail?' + tier.version + '">Expand role descriptions.</a></p>'
+    + '<\/div>'
+    + '<p>TESTING!<\/p>';
 }
 
 var makeList = function(tierID, allRoles, active) {
