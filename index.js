@@ -1,4 +1,15 @@
 var popover = function(name, description, team) {
+  //toggle-able popovers for custom display tab
+  if (quoteattr(tier.version) == "CustomPicker") {
+    return '<button id="customPicker" type="button" class="btn btn-default collapseCustom '+team.split(' ')[0]+'" href="#" data-content="'
+    + quoteattr(description)
+    + '" rel="popover" data-placement="top" data-original-title="'
+    + quoteattr(name + ' - ' + team)
+    + '" data-toggle="popover" data-trigger="hover">'
+    + quoteattr(name)
+    + '<\/button>';
+  }
+  //normal popovers for set role display
   return '<button type="button" class="btn btn-default '+team.split(' ')[0]+'" href="#" data-content="'
     + quoteattr(description)
     + '" rel="popover" data-placement="top" data-original-title="'
@@ -30,8 +41,8 @@ var tierList = function(tier, active) {
     return '<div class="tab-pane fade' + (active ? ' active in' : '')
     + '" id="tier-' + quoteattr(tier.version) + '">'
     + '<p>' + quoteattr(tier.description) + '<\/p>'
+    + '<button id="customPicker" class="btn success collapsible">Basic</button>'
     + '<div id="tier-' + quoteattr(tier.version) + '-list" class="container">'
-    + '<button id="customPicker" class="btn success collapsible">Success</button>'
     + '<\/div>'
     + '<p><a href="/detail?' + tier.version + '">Expand role descriptions.</a></p>'
     + '<\/div>';
