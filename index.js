@@ -26,26 +26,23 @@ var tab = function(tier, active) {
 };
 
 var tierList = function(tier, active) {
-  /*if (1 == 1) {
+  if (quoteattr(tier.version) == "CustomPicker") {
     return '<div class="tab-pane fade' + (active ? ' active in' : '')
     + '" id="tier-' + quoteattr(tier.version) + '">'
     + '<p>' + quoteattr(tier.description) + '<\/p>'
     + '<div id="tier-' + quoteattr(tier.version) + '-list" class="container">'
-    + '<p>fortnite<\/p>'
+    + '<button id="customPicker" class="btn success collapsible">Success</button>'
     + '<\/div>'
     + '<p><a href="/detail?' + tier.version + '">Expand role descriptions.</a></p>'
     + '<\/div>';
-  }*/
-  return '<div class="tab-pane fade' + (active ? ' active in' : '')
+  }
+  return '<div class="tab-pane fade collapsible' + (active ? ' active in' : '')
     + '" id="tier-' + quoteattr(tier.version) + '">'
     + '<p>' + quoteattr(tier.description) + '<\/p>'
-    + '<p>TESTING!<\/p>'
     + '<div id="tier-' + quoteattr(tier.version) + '-list" class="container">'
     + '<\/div>'
-    + '<p>TESTING!<\/p>'
     + '<p><a href="/detail?' + tier.version + '">Expand role descriptions.</a></p>'
-    + '<\/div>'
-    + '<p>TESTING!<\/p>';
+    + '<\/div>';
 }
 
 var makeList = function(tierID, allRoles, active) {
