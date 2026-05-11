@@ -1,7 +1,7 @@
-var popover = function(name, description, team) {
+var popover = function(name, description, team, category) {
   //toggle-able popovers for custom display tab
-  if (quoteattr(tier.version) == "CustomPicker") {
-    return '<button id="customPicker" type="button" class="btn btn-default collapseCustom '+team.split(' ')[0]+'" href="#" data-content="'
+  if (quoteattr(category) == "killing") {
+    return '<button id="collapseSelf" type="button" class="btn btn-default collapseCustom '+team.split(' ')[0]+'" href="#" data-content="'
     + quoteattr(description)
     + '" rel="popover" data-placement="top" data-original-title="'
     + quoteattr(name + ' - ' + team)

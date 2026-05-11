@@ -2,7 +2,8 @@
 	{
 		"name": "1-Shot Bulletproof Mafia",
 		"description": "Protected from one kill during the night.",
-		"team": "Mafia"
+		"team": "Mafia",
+		"category": "killing"
 	},
 	{
 		"name": "Abductor",
