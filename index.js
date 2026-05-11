@@ -67,7 +67,7 @@ var makeList = function(tierID, allRoles, active) {
     $('#tiers').append(tierList(tier, active));
     $.each(roles, function(ix, e) {
       $('#tier-' + tier.version + '-list')
-        .append(popover(e.name, e.description, e.team));
+        .append(popover(e.name, e.description, e.team, e.category));
     });
     // make popovers actually into popovers
     // Note: we need to do this initialization here because otherwise the
