@@ -230,7 +230,7 @@
 	},
 	{
 		"name": "Agoraphobe",
-		"description": "Infinite bulletproof. Visit one player each night. That player dies if no one else visits them. Win with the Waterboarder and know if they are in the game.",
+		"description": "Infinite bulletproof. Visit 1 player per night. That player dies if no one else visits them. Win with the Waterboarder; know if they are in the game but not who they are.",
 		"team": "Third Party"
 	},
 	{
@@ -255,17 +255,17 @@
 	},
 	{
 		"name": "Barista",
-		"description": "1-shot bulletproof. Kill 1 person per night. The person you visit is silenced the next day if they live.",
+		"description": "1-shot bulletproof. Kill 1 person per night. The person you visit is silenced the next day if they live. Win with the Herbalist; know if they are in the game but not who they are.",
 		"team": "Third Party"
 	},
 	{
 		"name": "Bounty Hunter",
-		"description": "1-shot bulletproof. Each night, the mod tells you 1 random living role (if a side has a big advantage, the mod may want to pick from that side), and you visit 1 player. If the player you visit has that role, they die infallibly; else nothing happens. Morning announcements show them as \"assassinated\". Appear innocent until your 1st kill. If all other evil killers are dead, become a Waterboarder.",
+		"description": "1-shot bulletproof, innocent. Each night, the mod tells you 1 random living role (if a side is winning, the mod may pick from it), and you visit 1 player. If the player you visit has that role, they die infallibly—announced as \"assassinated\"; else nothing happens. Win with the Pirate; know if they are in the game but not who they are. Become a Pirate if all other evil killers die.",
 		"team": "Third Party"
 	},
 	{
 		"name": "Doomsayer",
-		"description": "1-shot bulletproof. Each night, the person you last voted for burns to death if they survived the vote. This is not a visit.",
+		"description": "1-shot bulletproof. Each night, the person you last voted for burns to death if they survived the vote. This is not a visit. Win with the Joker; know if they are in the game but not who they are.",
 		"team": "Third Party"
 	},
 	{
@@ -276,7 +276,7 @@
 	},
 	{
 		"name": "Herbalist",
-		"description": "Poison someone each night. They know that they were poisoned, and will die the next night unless saved. Win with the Arsonist.",
+		"description": "Poison someone each night. They know that they were poisoned, and will die the next night unless saved. Win with the Barista; know if they are in the game but not who they are.",
 		"team": "Third Party",
 		"author": "Ben"
 	},
@@ -293,7 +293,7 @@
 	},
 	{
 		"name": "Joker",
-		"description": "1-shot bulletproof. Kill 1 person per night. Once per game, if on the block, may pick someone to take your place before voting.",
+		"description": "1-shot bulletproof. Kill 1 person per night. Once per game, survive being voted out and pick someone else to die instead. Win with the Doomsayer; know if they are in the game but not who they are.",
 		"team": "Third Party"
 	},
 	{
@@ -313,7 +313,7 @@
 	},
 	{
 		"name": "Pirate",
-		"description": "1-shot bulletproof. On odd-numbered nights, roleblock 1 person. On even-numbered nights, kill 2 people.",
+		"description": "1-shot bulletproof. On odd-numbered nights, roleblock 1 person. On even-numbered nights, kill 2 people. Win with the Bounty Hunter; know if they are in the game but not who they are.",
 		"team": "Third Party"
 	},
 	{
@@ -323,7 +323,7 @@
 	},
 	{
 		"name": "Waterboarder",
-		"description": "Each night, roleblock a player and see their role, and kill another. Win with the Agoraphobe and know if they are in the game.",
+		"description": "Each night, roleblock a player and see their role, and kill another. Win with the Agoraphobe; know if they are in the game but not who they are.",
 		"team": "Third Party"
 	},
 	{
@@ -457,12 +457,12 @@
 	},
 	{
 		"name": "Eavesdropper",
-		"description": "You may open your eyes at night—if other roles do this, it is cheating! If an evil player sees you with your eyes open, you die infallibly.",
+		"description": "You may open your eyes freely at night—if other roles do this, it's cheating! If an evil player sees you with your eyes open, you die infallibly. All evil roles know this role is present, but not who has it.",
 		"team": "Town"
 	},
 	{
 		"name": "Electrician",
-		"description": "The first person of the game to visit you dies instantly.",
+		"description": "The first person to visit you dies infallibly.",
 		"team": "Town"
 	},
 	{
@@ -545,7 +545,7 @@
 	},
 	{
 		"name": "Lobbyist",
-		"description": "Each night, you may nominate 1 person. The mod announces that they start the day with 1 nomination, but will not say who nominated them.",
+		"description": "Each night, you may nominate 1 person. The mod announces that they start the day with 1 nomination, but will not say who nominated them. In daytime, you may second your night nomination.",
 		"team": "Town"
 	},
 	{
@@ -575,7 +575,7 @@
 	},
 	{
 		"name": "Metagaming",
-		"description": "Using info that game characters wouldn't have access to, like hearing the mod stand next to someone and concluding that they wake up, using the night length to guess roles, making inferences based on mod fails, etc. This is discouraged.",
+		"description": "Using info that game characters wouldn't have access to, like hearing the mod stand next to someone and concluding that they wake up, using the night length to guess roles, making inferences based on mod fails, etc. It ruins the game.",
 		"team": "Mafia"
 	},
 	{
@@ -701,7 +701,7 @@
 	},
 	{
 		"name": "Samurai",
-		"description": "Infinite-shot vigilante. If you are the sole cause of an innocent death, you die.",
+		"description": "Infinite-shot vigilante. Can use at most 2 shots per night. If you're the sole cause of a Town death, you die.",
 		"team": "Town"
 	},
 	{
@@ -835,7 +835,7 @@
 	},
 	{
 		"name": "Witch",
-		"description": "Optionally visit someone each night. If they'd die, save them. If not, kill them.",
+		"description": "Each night, visit 1 person or no one. If they would die, save them. If not, kill them.",
 		"team": "Town",
 		"author": "Devin Lehmacher"
 	},
